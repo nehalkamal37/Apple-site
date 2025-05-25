@@ -20,7 +20,10 @@ export const Header = () => {
     { name: 'About Us', href: '/about', current: location.pathname === '/about' },
     { name: 'Services', href: '/services', current: location.pathname === '/services' },
     { name: 'Prescriber Portal', href: '/prescriber-portal', current: location.pathname === '/prescriber-portal' },
-    { name: 'Patient Resources', href: '/patient-resources', current: location.pathname === '/patient-resources' },
+           { name: 'patient Portal', href: "https://patient.rxlocal.com/", current: location.pathname === '/patient-portal' },
+
+
+    { name: 'Patient Resources', href: 'https://www.rxlocal.com/resources-page/', current: location.pathname === '/patient-resources' },
     { name: 'Contact Us', href: '/contact', current: location.pathname === '/contact' },
     { name: 'Privacy Notice', href: '/privacy-notice', current: location.pathname === '/privacy-notice' },
   ];
@@ -50,7 +53,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Apple Specialty Pharmacy" className="h-12 w-auto" />
+            <img src="logo.png" alt="Apple Specialty Pharmacy" className="h-12 w-auto" />
             <div className="ml-3 flex flex-col">
               <span className="text-lg font-semibold text-primary-700">Apple Specialty</span>
               <span className="text-sm text-primary-600">Pharmacy</span>
