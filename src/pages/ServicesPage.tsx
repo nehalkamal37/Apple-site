@@ -13,6 +13,7 @@ import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { ServiceCard } from '../components/services/ServiceCard';
 import { motion } from 'framer-motion';
+import { Button } from '../components/ui/Button';
 
 const ServicesPage = () => {
   return (
@@ -21,7 +22,24 @@ const ServicesPage = () => {
         title="Our Specialty Services"
         subtitle="Comprehensive medication management and support for complex conditions"
         bgImage="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg"
-      />
+      >
+         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+           <Button 
+                    variant="secondary" 
+                    size="lg"
+                    // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
+                    // Example using react-router-dom's Link directly:
+                    // component={Link} to="/prescriber-portal"
+                    // Or, fallback to a simple anchor tag:
+                    // asChild
+                  >
+                     <a href="https://pharmacy.rxlocal.com/login/?redirect=%2Fdashboards" target="_blank">
+                      Pharmacy Portal            </a>
+                  </Button>
+                </div>
+              </Hero>
+
 
       {/* Service Categories */}
       <Section>

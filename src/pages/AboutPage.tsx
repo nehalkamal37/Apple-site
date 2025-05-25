@@ -1,8 +1,9 @@
-import { Award, Users, Clock, ShieldCheck, Briefcase as BriefcaseMedical, Building } from 'lucide-react';
+import { Award, Users, Clock, ShieldCheck, Briefcase as BriefcaseMedical, Building, Link } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
 import { motion } from 'framer-motion';
+import { Button } from '../components/ui/Button';
 
 const AboutPage = () => {
   return (
@@ -11,8 +12,24 @@ const AboutPage = () => {
         title="About Apple Specialty Pharmacy"
         subtitle="Delivering specialized care and personalized medication management since 2005"
         bgImage="https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg"
-      />
-
+      >
+ <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        
+          <Button 
+            variant="secondary" 
+            size="lg"
+            // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
+            // Example using react-router-dom's Link directly:
+            // component={Link} to="/prescriber-portal"
+            // Or, fallback to a simple anchor tag:
+            // asChild
+          >
+            <a href="https://app.rxlocal.com" target="_blank">
+              Download RxLocal App
+            </a>
+          </Button>
+        </div>
+      </Hero>
       {/* Mission & Vision */}
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

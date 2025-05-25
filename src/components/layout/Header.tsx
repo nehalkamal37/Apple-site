@@ -20,10 +20,9 @@ export const Header = () => {
     { name: 'About Us', href: '/about', current: location.pathname === '/about' },
     { name: 'Services', href: '/services', current: location.pathname === '/services' },
     { name: 'Prescriber Portal', href: '/prescriber-portal', current: location.pathname === '/prescriber-portal' },
-           { name: 'patient Portal', href: "https://patient.rxlocal.com/", current: location.pathname === '/patient-portal' },
 
 
-    { name: 'Patient Resources', href: 'https://www.rxlocal.com/resources-page/', current: location.pathname === '/patient-resources' },
+    { name: 'Patient Resources', href: 'patient-resources', current: location.pathname === '/patient-resources' },
     { name: 'Contact Us', href: '/contact', current: location.pathname === '/contact' },
     { name: 'Privacy Notice', href: '/privacy-notice', current: location.pathname === '/privacy-notice' },
   ];

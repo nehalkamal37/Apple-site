@@ -33,13 +33,18 @@ const HomePage = () => {
           >
             Contact Us
           </Button>
-          <Button 
+         
+              <Button 
             variant="secondary" 
-            size="lg" 
-            as={Link} 
-            to="/prescriber-portal"
+            size="lg"
+            // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
+            // Example using react-router-dom's Link directly:
+            // component={Link} to="/prescriber-portal"
+            // Or, fallback to a simple anchor tag:
+            // asChild
           >
-            Prescriber Portal
+            <a href="https://patient.rxlocal.com" target="_blank">
+Patient Portal            </a>
           </Button>
         </div>
       </Hero>

@@ -20,7 +20,23 @@ const PatientResourcesPage = () => {
         title="Patient Resources"
         subtitle="Information and support to help you manage your health"
         bgImage="https://images.pexels.com/photos/7579369/pexels-photo-7579369.jpeg"
-      />
+      >
+           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+           <Button 
+                    variant="secondary" 
+                    size="lg"
+                    // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
+                    // Example using react-router-dom's Link directly:
+                    // component={Link} to="/prescriber-portal"
+                    // Or, fallback to a simple anchor tag:
+                    // asChild
+                  >
+                     <a href="https://www.rxlocal.com/resources-page/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      RxLocal Resources            </a>
+                  </Button>
+                </div>
+              </Hero>
 
       {/* Resource Categories */}
       <Section>
