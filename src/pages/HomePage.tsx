@@ -240,6 +240,7 @@ export default function BrochurePage() {
     </div>
     */}
      {/* Health Insurance Accepted */}
+
   <div className="bg-white p-6 rounded-2xl shadow-lg">
     <h3 className="text-2xl font-bold text-teal-800 mb-4">Health Insurance Accepted</h3>
     <ul className="space-y-3">
@@ -254,14 +255,21 @@ export default function BrochurePage() {
   
 
   {/* Center-inside panel (puzzle already there, so you could swap) */}
-  <div className="text-center">
-    <img src="/images/roll.jpg" alt="Puzzle graphic" className="mx-auto w-160" />
-  </div>
 
-  {/* Right-inside panel */}
+<div className="text-center">
+  <h3 className="text-xl font-bold text-teal-800 mb-4">Your Experience Matters</h3>
+  <p className="text-gray-800 mt-4 max-w-md mx-auto text-sm">
+    At Apple Specialty Pharmacy, each service we provide is a vital piece of the puzzle.
+  </p>
+  <img src="/images/roll.jpg" alt="Puzzle graphic" className="mx-auto w-160" />
+    <p className="text-gray-800 mt-3 text-sm max-w-md mx-auto">
+    Together, they build a care experience that is precise, compassionate, and personalized to your needs.
+  </p>
+ 
+</div>
+
 
 {/* Right-inside panel */}
-<div className="space-y-8">
 
   {/* Therapies We Manage */}
   <div className="bg-white p-6 rounded-2xl shadow-lg">
@@ -289,7 +297,7 @@ export default function BrochurePage() {
     </ul>
   </div>
   */}
-</div>
+
 
 </section>
 

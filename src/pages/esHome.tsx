@@ -179,11 +179,20 @@ export default function BrochurePage() {
             </ul>
           </div>
 
-          <div className="text-center">
-            <img src="/images/roll.jpg" alt="Gráfico de rompecabezas" className="mx-auto w-160" />
-          </div>
+{/* Center-inside panel (puzzle already there, so you could swap) */}
+<div className="text-center">
+  <h3 className="text-xl font-bold text-teal-800 mb-4">Tu Experiencia Importa</h3>
+   <p className="text-gray-800 mt-4 max-w-md mx-auto text-sm">
+    En Apple Specialty Pharmacy, tu atención es una colaboración: cada servicio es una pieza vital del rompecabezas.
+  </p>
+  <img src="/images/roll.jpg" alt="Gráfico de rompecabezas" className="mx-auto w-160" />
+ 
+  <p className="text-gray-700 mt-3 text-sm max-w-md mx-auto">
+    Juntos, construyen una experiencia de atención precisa, compasiva y personalizada a tus necesidades.
+  </p>
+</div>
 
-          <div className="space-y-8">
+
             <div className="bg-white p-6 rounded-2xl shadow-lg">
               <h3 className="text-2xl font-bold text-teal-800 mb-4">Terapias que manejamos</h3>
               <ul className="space-y-3">
@@ -195,7 +204,7 @@ export default function BrochurePage() {
                 ))}
               </ul>
             </div>
-          </div>
+          
         </motion.section>
 
         <motion.section
