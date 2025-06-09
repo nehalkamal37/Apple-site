@@ -1,281 +1,362 @@
-import { Link } from 'react-router-dom';
-import { 
-  PillIcon, 
-  Truck, 
-  HeartPulse, 
-  ShieldCheck, 
-  Users, 
-  Phone,
-  ArrowRight
-} from 'lucide-react';
-import { Hero } from '../components/ui/Hero';
+// src/pages/BrochurePage.tsx
+import React from 'react'
+import { motion } from 'framer-motion'
 import { Button } from '../components/ui/Button';
-import { Section } from '../components/ui/Section';
-import { FeatureCard } from '../components/home/FeatureCard';
-import { Card } from '../components/ui/Card';
-import { motion } from 'framer-motion';
 
-const HomePage = () => {
+import {
+  Heart,
+  BookOpen,
+  Truck,
+  DollarSign,
+  Users,
+  Phone,
+  Printer,
+  Car,
+  MessageCircle,
+  Pill,
+  Check,
+  Computer,
+  CheckCircle,
+} from 'lucide-react'
+import { Hero } from '../components/ui/Hero'
+
+const experienceItems = [
+  { Icon: Heart, text: 'Care That Puts You First' },
+  { Icon: BookOpen, text: 'Free Delivery to Your Door' },
+  { Icon: Truck, text: 'Answers That Make Sense' },
+  { Icon: DollarSign, text: 'Help With Costs and Coverage' },
+  { Icon: Users, text: 'Your Health Team, Working Together' },
+]
+
+const stayConnectedItems = [
+  { Icon: MessageCircle, text: 'Secure messaging with our pharmacy team' },
+  { Icon: Pill, text: 'Order and manage prescription refills using your mobile device' },
+  { Icon: Truck, text: 'Track your order status in real time' },
+  { Icon: Check, text: 'Review your account and make secure payments' },
+]
+
+const getStartedItems = [
+  { Icon: Phone, text: '323-999-APPL (2775)' },
+  { Icon: Printer, text: '323-955-APPL (2775)' },
+  {
+    Icon: Car,
+    text: '1211 N. Broadway, Ste 300\nSanta Ana, CA 92701',
+  },
+]
+
+const therapies = [
+  "HIV/AIDS",
+  "Hepatitis C",
+  "Rheumatoid Arthritis",
+  "Multiple Sclerosis",
+  "Oncology",
+  "Transplant",
+  "Dermatology",
+  "Gastroenterology",
+  "Other Specialty Conditions"
+];
+
+const insurances = [
+  "Medicare Part D",
+  "Medi-Cal",
+  "Covered California",
+  "Private Insurance",
+  "Commercial Plans",
+  "Most Major PBMs",
+  "ADAP",
+  "Ryan White",
+  "and more"
+];
+
+export default function BrochurePage() {
   return (
     <>
+      {/* Hero */}
       <Hero
-        title="Modern Care, Personalized Precision"
-        subtitle="Apple Specialty Pharmacy delivers specialized medications with exceptional care and support for patients with complex conditions."
-        bgImage="https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg"
+        title="MODERN CARE"
+        subtitle="PERSONALIZED PRECISION"
+        bgImage="/images/hero.png"
         height="lg"
       >
+         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    variant="primary" 
+                    size="lg" 
+                  //  as={Link} 
+                  //  to="/contact"
+                  >
+                     <a href="/contact" target="_blank">
+           Contact Us
+            </a>
+                  
+                  </Button>
+                 
+                      <Button 
+                    variant="secondary" 
+                    size="lg"
+                    // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
+                    // Example using react-router-dom's Link directly:
+                    // component={Link} to="/prescriber-portal"
+                    // Or, fallback to a simple anchor tag:
+                    // asChild
+                  >
+                    <a href="https://patient.rxlocal.com" target="_blank">
+        Patient Portal            </a>
+                  </Button>
+                </div>
+        {/*
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            variant="primary" 
-            size="lg" 
-            as={Link} 
-            to="/contact"
-          >
-            Contact Us
-          </Button>
-         
-              <Button 
-            variant="secondary" 
-            size="lg"
-            // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
-            // Example using react-router-dom's Link directly:
-            // component={Link} to="/prescriber-portal"
-            // Or, fallback to a simple anchor tag:
-            // asChild
-          >
-            <a href="https://patient.rxlocal.com" target="_blank">
-Patient Portal            </a>
+          <Button variant="contained" size="large">
+            <a href="https://app.rxlocal.com" target="_blank" rel="noopener noreferrer">
+            </a>
           </Button>
         </div>
+        */}
       </Hero>
 
-      {/* Services Preview */}
-      <Section bgColor="light">
-        <div className="text-center mb-12">
-          <motion.h2 
-            className="text-3xl font-bold text-gray-900 mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Specialized Care for Complex Conditions
-          </motion.h2>
-          <motion.p 
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            We provide comprehensive pharmacy services tailored to your unique healthcare needs
-          </motion.p>
-        </div>
+      {/* Brochure Content */}
+      <motion.main
+        className="container mx-auto p-8 space-y-16"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <FeatureCard
-            icon={<PillIcon className="h-6 w-6" />}
-            title="Specialty Medications"
-            description="Access to specialized medications for complex and chronic conditions with expert guidance."
-            delay={0.1}
-          />
-          <FeatureCard
-            icon={<Truck className="h-6 w-6" />}
-            title="Free Delivery"
-            description="Convenient and reliable medication delivery directly to your doorstep at no additional cost."
-            delay={0.2}
-          />
-          <FeatureCard
-            icon={<HeartPulse className="h-6 w-6" />}
-            title="Patient Support"
-            description="Comprehensive support programs including financial assistance and educational resources."
-            delay={0.3}
-          />
-        </div>
-
-        <div className="text-center mt-12">
-          <Button 
-            variant="primary" 
-            as={Link} 
-            to="/services"
-            icon={<ArrowRight className="h-4 w-4" />}
-            iconPosition="right"
-          >
-            View All Services
-          </Button>
-        </div>
-      </Section>
-
-      {/* About Preview */}
-      <Section>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* === Row 1: Experience | Stay Connected | Get Started === */}
+        <motion.section
+          className="grid md:grid-cols-3 gap-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1 } } }}
+        >
+          {/* Experience Panel */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+            className="bg-white p-8 rounded-2xl shadow-lg"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Apple Specialty Pharmacy?</h2>
-            <p className="text-gray-600 mb-6">
-              At Apple Specialty Pharmacy, we combine modern healthcare technology with personalized service to provide an exceptional experience for our patients and healthcare partners.
+            <h2 className="text-3xl font-extrabold text-primary-800 mb-4">
+              Your Experience Matters
+            </h2>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              At Apple Specialty Pharmacy, your care is a partnership — each service a vital piece of the puzzle.
             </p>
-            
             <ul className="space-y-4">
-              <li className="flex">
-                <ShieldCheck className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0" />
-                <div>
-                  <h3 className="font-medium text-gray-900">URAC Accredited</h3>
-                  <p className="text-gray-600">Meeting the highest standards for healthcare quality and safety.</p>
-                </div>
-              </li>
-              <li className="flex">
-                <Users className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0" />
-                <div>
-                  <h3 className="font-medium text-gray-900">Dedicated Care Team</h3>
-                  <p className="text-gray-600">Personalized support from experienced healthcare professionals.</p>
-                </div>
-              </li>
-              <li className="flex">
-                <Phone className="h-6 w-6 text-primary-600 mr-3 flex-shrink-0" />
-                <div>
-                  <h3 className="font-medium text-gray-900">24/7 Clinical Support</h3>
-                  <p className="text-gray-600">Around-the-clock access to pharmacists and care coordinators.</p>
-                </div>
-              </li>
+              {experienceItems.map(({ Icon, text }, i) => (
+                <li key={i} className="flex items-start">
+                  <span className="flex items-center justify-center w-10 h-10 bg-primary-100 rounded-full mr-4">
+                    <Icon className="h-5 w-5 text-primary-600" />
+                  </span>
+                  <span className="text-gray-800">{text}</span>
+                </li>
+              ))}
             </ul>
-            
-            <div className="mt-8">
-              <Button 
-                variant="primary" 
-                as={Link} 
-                to="/about"
-                icon={<ArrowRight className="h-4 w-4" />}
-                iconPosition="right"
-              >
-                Learn More About Us
-              </Button>
-            </div>
           </motion.div>
-          
+
+          {/* Stay Connected Panel */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            variants={{ hidden: { x: -20, opacity: 0 }, visible: { x: 0, opacity: 1 } }}
+            className="bg-primary-600 text-white rounded-2xl p-8 flex flex-col justify-between"
           >
-            <img 
-              src="https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg" 
-              alt="Pharmacist helping a patient" 
-              className="rounded-xl shadow-lg w-full h-auto object-cover" 
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">
+                Stay Connected, Anytime, Anywhere
+              </h3>
+              <p className="mb-6 leading-relaxed">
+                Our secure online and mobile tools help you manage your medications with ease.
+              </p>
+              <ul className="space-y-4">
+                {stayConnectedItems.map(({ Icon, text }, i) => (
+                  <li key={i} className="flex items-start">
+                    <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full mr-3">
+                      <Icon className="h-4 w-4 text-primary-600" />
+                    </span>
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <img
+              src="/images/phone.jpg"
+              alt="Patient using mobile"
+              className="mt-8 rounded-xl shadow-lg object-cover w-full h-48"
             />
           </motion.div>
-        </div>
-      </Section>
 
-      {/* Testimonials */}
-      <Section bgColor="primary">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Patients Say</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real stories from patients who rely on our specialized care
-          </p>
-        </div>
+          {/* Get Started Panel */}
+          <motion.div
+            variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+            className="bg-white p-8 rounded-2xl shadow-lg"
+          >
+            <h2 className="text-3xl font-extrabold text-primary-800 mb-4">
+              Get Started Today
+            </h2>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Let Apple Specialty Pharmacy take the stress out of specialty care.
+            </p>
+            <ul className="space-y-4">
+              {getStartedItems.map(({ Icon, text }, i) => (
+                <li
+                  key={i}
+                  className="flex items-center bg-primary-50 rounded-full px-4 py-2 hover:shadow-md transition-shadow"
+                >
+                  <Icon className="h-5 w-5 text-primary-600 mr-3" />
+                  <span className="whitespace-pre-wrap font-medium">{text}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </motion.section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="p-6" animation>
-            <div className="flex flex-col h-full">
-              <div className="mb-4">
-                <div className="flex text-secondary-500">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                      <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <blockquote className="text-gray-700 italic mb-4 flex-grow">
-                "Apple Specialty Pharmacy has made managing my medication so much easier. Their team is incredibly knowledgeable and always takes the time to answer my questions."
-              </blockquote>
-              <footer>
-                <p className="font-medium text-gray-900">Sarah M.</p>
-                <p className="text-sm text-gray-500">Patient since 2023</p>
-              </footer>
-            </div>
-          </Card>
+        {/* === Row 2: Puzzle Graphic Centered === */}
+        <motion.section
+          className="flex justify-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          {/*
+          <img
+            src="/images/roll.jpg"
+            alt="Puzzle graphic"
+            className="w-64 h-64 rounded-full shadow-2xl"
+          />
+          */}
+        </motion.section>
+        
+        <section className="grid lg:grid-cols-3 gap-8 p-8 bg-white rounded-2xl shadow">
+  {/* Left-inside panel 
+    <div className="space-y-4">
+    <h3 className="text-2xl font-semibold text-teal-800">MODERN CARE</h3>
+    <h4 className="text-lg text-teal-700">PERSONALIZED PRECISION</h4>
+    <ul className="space-y-3 text-gray-800">
+      <li>Compassionate and knowledgeable clinical support…</li>
+      <li>Free delivery to your doorstep or curbside pickup</li>
+      <li>Education and therapy guidance aligned with your provider’s care plan</li>
+      <li>Assistance with financial support, including manufacturer-sponsored copay programs</li>
+      <li>Care coordination with your providers, labs, and insurance</li>
+    </ul>
+    </div>
+    */}
+     {/* Health Insurance Accepted */}
+  <div className="bg-white p-6 rounded-2xl shadow-lg">
+    <h3 className="text-2xl font-bold text-teal-800 mb-4">Health Insurance Accepted</h3>
+    <ul className="space-y-3">
+      {insurances.map((plan) => (
+        <li key={plan} className="flex items-start">
+          <CheckCircle className="h-5 w-5 text-teal-600 flex-shrink-0 mr-3 mt-1" />
+          <span className="text-gray-700">{plan}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+  
 
-          <Card className="p-6" animation>
-            <div className="flex flex-col h-full">
-              <div className="mb-4">
-                <div className="flex text-secondary-500">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                      <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <blockquote className="text-gray-700 italic mb-4 flex-grow">
-                "Their delivery service is always on time, and the care team checks in regularly. It's the personal touch that sets them apart from other pharmacies I've used."
-              </blockquote>
-              <footer>
-                <p className="font-medium text-gray-900">James T.</p>
-                <p className="text-sm text-gray-500">Patient since 2022</p>
-              </footer>
-            </div>
-          </Card>
+  {/* Center-inside panel (puzzle already there, so you could swap) */}
+  <div className="text-center">
+    <img src="/images/roll.jpg" alt="Puzzle graphic" className="mx-auto w-160" />
+  </div>
 
-          <Card className="p-6" animation>
-            <div className="flex flex-col h-full">
-              <div className="mb-4">
-                <div className="flex text-secondary-500">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                      <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <blockquote className="text-gray-700 italic mb-4 flex-grow">
-                "The financial assistance program they helped me find has been life-changing. I can now afford my medications without worrying about the cost."
-              </blockquote>
-              <footer>
-                <p className="font-medium text-gray-900">Michael R.</p>
-                <p className="text-sm text-gray-500">Patient since 2024</p>
-              </footer>
-            </div>
-          </Card>
-        </div>
-      </Section>
+  {/* Right-inside panel */}
 
-      {/* CTA */}
-      <Section bgColor="white" className="bg-gradient-to-r from-primary-600 to-primary-800 text-white">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to experience better pharmacy care?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today to learn how we can support your healthcare journey with personalized service and specialized medications.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="accent" 
-              size="lg" 
-              as={Link} 
-              to="/contact"
-            >
-              Contact Us
-            </Button>
-            <Button 
-              variant="secondary" 
-              size="lg" 
-              as={Link} 
-              to="/services"
-            >
-              Explore Our Services
-            </Button>
-          </div>
-        </div>
-      </Section>
+{/* Right-inside panel */}
+<div className="space-y-8">
+
+  {/* Therapies We Manage */}
+  <div className="bg-white p-6 rounded-2xl shadow-lg">
+    <h3 className="text-2xl font-bold text-teal-800 mb-4">Therapies We Manage</h3>
+    <ul className="space-y-3">
+      {therapies.map((t) => (
+        <li key={t} className="flex items-start">
+          <CheckCircle className="h-5 w-5 text-teal-600 flex-shrink-0 mr-3 mt-1" />
+          <span className="text-gray-700">{t}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Health Insurance Accepted 
+  <div className="bg-white p-6 rounded-2xl shadow-lg">
+    <h3 className="text-2xl font-bold text-teal-800 mb-4">Health Insurance Accepted</h3>
+    <ul className="space-y-3">
+      {insurances.map((plan) => (
+        <li key={plan} className="flex items-start">
+          <CheckCircle className="h-5 w-5 text-teal-600 flex-shrink-0 mr-3 mt-1" />
+          <span className="text-gray-700">{plan}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+  */}
+</div>
+
+</section>
+
+
+   {/* === Row 3: Hours | QR/Web + Footer grouped === */}
+{/* === Row 3: Hours | Visit | App Download (Stylized) === */}
+<motion.section
+  className="grid grid-cols-1 md:grid-cols-3 gap-6"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1 } } }}
+>
+  {/* Hours of Operation */}
+  <motion.div
+    variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+    className="bg-gradient-to-br from-teal-100 to-white p-6 rounded-2xl border border-teal-200 shadow-md"
+  >
+    <h3 className="text-2xl font-bold text-teal-800 mb-3">Hours of Operation</h3>
+    <p className="text-teal-900">Mon – Fri: 8:30 AM – 5:00 PM PST</p>
+    <p className="text-teal-700 mt-2 text-sm leading-relaxed">
+      Clinical support available weekdays, weekends & holidays.
+    </p>
+  </motion.div>
+
+  {/* Visit Us Online */}
+ 
+  {/* Visit Us Online */}
+<motion.div
+  variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+  className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-2xl border border-primary-200 shadow-md flex flex-col items-center justify-center text-center"
+>
+  <h3 className="text-2xl font-bold text-primary-800 mb-3">
+    Visit Us Online
+  </h3>
+  <a
+    href="https://www.applespecialtypharmacy.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-primary-600 text-lg font-medium underline hover:text-primary-800 transition"
+  >
+    www.applespecialtypharmacy.com
+  </a>
+</motion.div>
+
+
+  {/* Download App */}
+  <motion.div
+    variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+    className="bg-gradient-to-br  from-teal-50 to-white p-6 rounded-2xl border border-teal-200 shadow-md text-center"
+  >
+    <h3 className="text-2xl font-bold text-teal-800 mb-2">Download Our App</h3>
+    <p className="text-teal-700 mb-4 text-sm leading-relaxed">
+      Scan the QR code below using your mobile device.
+    </p>
+    <img
+      src="/images/qr.jpg"
+      alt="QR code to download the pharmacy app"
+      className="w-32 h-32 mx-auto rounded-md shadow"
+    />
+  </motion.div>
+</motion.section>
+
+
+
+      </motion.main>
     </>
-  );
-};
+  )
+}
 
-export default HomePage;

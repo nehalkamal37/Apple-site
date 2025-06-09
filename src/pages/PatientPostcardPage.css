@@ -1,0 +1,117 @@
+.postcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.postcard {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #2a5885;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.feature-list, .tool-list {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.feature-list li, .tool-list li {
+  margin-bottom: 8px;
+  position: relative;
+  list-style-type: none;
+}
+
+.feature-list li:before, .tool-list li:before {
+  content: "•";
+  position: absolute;
+  left: -15px;
+}
+
+.tools-description {
+  margin-bottom: 15px;
+}
+
+.pharmacy-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+
+.cta-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.cta-description {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.stay-connected {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hours-section {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hours-title {
+  font-weight: bold;
+}
+
+.clinical-support {
+  font-style: italic;
+}
+
+.visit-online {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.website {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #2a5885;
+  font-size: 18px;
+  line-height: 1.3;
+}

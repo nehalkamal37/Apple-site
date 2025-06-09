@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
-import HomePage from './pages/HomePage';
+//import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import PrescriberPortalPage from './pages/PrescriberPortalPage';
@@ -8,13 +8,24 @@ import PatientResourcesPage from './pages/PatientResourcesPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyNoticePage from './pages/PrivacyNoticePage';
 import NotFoundPage from './pages/NotFoundPage';
-
+import BrochurePage from './pages/HomePage';
+import EsBrochurePage from './pages/esHome';
+// If BrochurePage is a different component, update the path accordingly, for example:
+import TriFoldPage from './pages/TriFoldPage';
+import BrochureInside from './pages/BrochureInside';
+import PatientPostcardPage from './pages/PatientPostcardPage';
 function App() {
   return (
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          
+          <Route path="/" element={<BrochurePage />} />
+          <Route path="/es" element={<EsBrochurePage />} />
+            <Route path="/trifold" element={<TriFoldPage />} />
+<Route path="/brochure-inside" element={<BrochureInside />} />
+<Route path="/patient-postcard" element={<PatientPostcardPage />} />
+
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/prescriber-portal" element={<PrescriberPortalPage />} />

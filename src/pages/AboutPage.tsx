@@ -1,4 +1,4 @@
-import { Award, Users, Clock, ShieldCheck, Briefcase as BriefcaseMedical, Building, Link } from 'lucide-react';
+import { Award, Users, Clock, ShieldCheck, Briefcase as BriefcaseMedical, Building } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
@@ -15,7 +15,7 @@ const AboutPage = () => {
       >
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
         
-          <Button 
+          <Button  
             variant="secondary" 
             size="lg"
             // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.

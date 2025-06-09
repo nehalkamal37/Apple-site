@@ -10,6 +10,7 @@ import {
   Linkedin 
 } from 'lucide-react';
 import logo from '../../assets/logo.svg';
+import { Fax } from '@mui/icons-material';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -101,23 +102,22 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex">
                 <MapPin className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                <span>123 Pharmacy Way<br />Healthville, CA 90210</span>
+                <span>1211 N. Broadway, Ste 300
+<br/>Santa Ana, CA 92701</span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                <span>(123) 456-7890</span>
+                <span>323-999-APPL (2775)</span>
               </li>
               <li className="flex">
-                <Mail className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                <span>info@applespecialtypharmacy.com</span>
+                <Fax className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
+                <span>323-955-APPL (2775)</span>
               </li>
               <li className="flex">
                 <Clock className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
-                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 1:00 PM</p>
-                  <p>Sun: Closed</p>
-                </div>
+                  <p>Mon – Fri: 8:30 AM – 5:00 PM PST</p>
+                                 </div>
               </li>
             </ul>
           </div>

@@ -16,11 +16,9 @@ export const Header = () => {
   const location = useLocation();
 
   const navigation: NavItem[] = [
-    { name: 'Home', href: '/', current: location.pathname === '/' },
     { name: 'About Us', href: '/about', current: location.pathname === '/about' },
     { name: 'Services', href: '/services', current: location.pathname === '/services' },
     { name: 'Prescriber Portal', href: '/prescriber-portal', current: location.pathname === '/prescriber-portal' },
-
 
     { name: 'Patient Resources', href: 'patient-resources', current: location.pathname === '/patient-resources' },
     { name: 'Contact Us', href: '/contact', current: location.pathname === '/contact' },
@@ -52,7 +50,13 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="logo.png" alt="Apple Specialty Pharmacy" className="h-12 w-auto" />
+          {/* <img src="logo.png" alt="Apple Specialty Pharmacy" className="h-12 w-auto " /> */}
+<img
+  src="logo.png"
+  alt="Apple Specialty Pharmacy"
+  style={{ width: '70px', height: 'auto' }}
+/>
+
             <div className="ml-3 flex flex-col">
               <span className="text-lg font-semibold text-primary-700">Apple Specialty</span>
               <span className="text-sm text-primary-600">Pharmacy</span>
@@ -60,7 +64,18 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
+            <nav className="hidden lg:flex space-x-8 items-center">
+            <div className="relative group">
+              <button className="flex items-center text-gray-600 hover:text-primary-600 px-1 py-2 text-sm font-medium transition-colors">
+                Home
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              <div className="absolute left-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+                <Link to="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">English</Link>
+                <Link to="/es" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Español</Link>
+              </div>
+            </div>
+           
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -98,7 +113,12 @@ export const Header = () => {
             transition={{ duration: 0.3 }}
             className="lg:hidden bg-white border-t border-gray-200"
           >
-            <div className="container-custom py-4 space-y-1">
+               <div className="container-custom py-4 space-y-1">
+              <div className="border-b border-gray-100 pb-2 mb-2">
+                <span className="block text-xs font-semibold text-gray-500 mb-1 px-3">Home</span>
+                <Link to="/" className="block px-3 py-2 text-sm text-gray-700 hover:bg-primary-50 rounded-md">English</Link>
+                <Link to="/es" className="block px-3 py-2 text-sm text-gray-700 hover:bg-primary-50 rounded-md">Español</Link>
+              </div>
               {navigation.map((item) => (
                 <Link
                   key={item.name}
