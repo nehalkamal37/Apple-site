@@ -6,7 +6,7 @@ const ContactPage = () => {
     <div className="bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Futuristic Hero Section */}
       
-      <div className="relative h-screen max-h-[800px] overflow-hidden">
+      <div className="relative h-screen max-h-[600px] overflow-hidden">
                 <img
           src="https://images.pexels.com/photos/6098034/pexels-photo-6098034.jpeg"
           alt="Contact Hero"

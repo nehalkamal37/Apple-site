@@ -79,17 +79,12 @@ export default function BrochurePage() {
         height="lg"
       >
          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    variant="primary" 
-                    size="lg" 
-                  //  as={Link} 
-                  //  to="/contact"
-                  >
-                     <a href="/contact" target="_blank">
-           Contact Us
-            </a>
-                  
-                  </Button>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-md bg-primary-600 px-6 py-3 text-lg font-semibold text-white shadow hover:bg-primary-700 transition"
+              >
+                 Contact Us 
+              </a>
                  
                       <Button 
                     variant="secondary" 
@@ -101,7 +96,7 @@ export default function BrochurePage() {
                     // asChild
                   >
                     <a href="https://patient.rxlocal.com" target="_blank">
-        Patient Portal            </a>
+                       Patient Portal            </a>
                   </Button>
                 </div>
         {/*
