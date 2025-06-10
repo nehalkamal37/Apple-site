@@ -349,7 +349,7 @@ export default function BrochurePage() {
     variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
     className="bg-gradient-to-br  from-teal-50 to-white p-6 rounded-2xl border border-teal-200 shadow-md text-center"
   >
-    <h3 className="text-2xl font-bold text-teal-800 mb-2">Download Our App</h3>
+    <h3 className="text-2xl font-bold text-teal-800 mb-2">Open Our App</h3>
     <p className="text-teal-700 mb-4 text-sm leading-relaxed">
       Scan the QR code below using your mobile device.
     </p>
