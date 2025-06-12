@@ -22,10 +22,10 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <img src='logo.png' alt="Apple Specialty Pharmacy" className="h-10 w-auto" />
+              <img src='logo.png' alt="Apple Specialty Pharmacy" className="h-40  w-auto" />
               <div className="ml-3">
-                <h3 className="text-white text-lg font-semibold">Apple Specialty</h3>
-                <p className="text-gray-400 text-sm">Pharmacy</p>
+                <h3 className="text-white text-lg font-semibold"></h3>
+                <p className="text-gray-400 text-sm"></p>
               </div>
             </div>
             <p className="mb-4 text-gray-400">Modern Care • Personalized Precision</p>

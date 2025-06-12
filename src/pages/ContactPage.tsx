@@ -250,8 +250,8 @@ const ContactPage = () => {
                     <Clock className="h-6 w-6 text-blue-500 mt-1 mr-4" />
                     <div>
                       <h4 className="font-semibold text-lg">Hours</h4>
-                      <p className="text-gray-700">Mon-Fri: 8:30 AM - 5:00 PM</p>
-                      <p className="text-gray-700">Sat: 9:00 AM - 2:00 PM</p>
+                      <p className="text-gray-700"> Mon-Fri: 8:30 AM - 5:00 PM PST</p>
+                      <p className="text-gray-700"></p>
                     </div>
                   </div>
 
@@ -297,49 +297,49 @@ const ContactPage = () => {
               {
                 icon: <HeartPulse className="h-6 w-6" />,
                 title: 'Patient Care',
-                phone: '(123) 456-7891',
+                phone: '323-999-APPL (2775)',
                 color: 'from-blue-500 to-blue-600'
               },
               {
                 icon: <FileText className="h-6 w-6" />,
                 title: 'Prescriptions',
-                phone: '(123) 456-7892',
+                phone: '323-999-APPL (2775)',
                 color: 'from-emerald-500 to-emerald-600'
               },
               {
                 icon: <CreditCard className="h-6 w-6" />,
                 title: 'Billing',
-                phone: '(123) 456-7893',
+                phone: '323-999-APPL (2775)',
                 color: 'from-purple-500 to-purple-600'
               },
               {
                 icon: <Users className="h-6 w-6" />,
                 title: 'Providers',
-                phone: '(123) 456-7894',
+                phone: '323-999-APPL (2775)',
                 color: 'from-amber-500 to-amber-600'
               },
               {
                 icon: <MessageCircle className="h-6 w-6" />,
                 title: 'Clinical',
-                phone: '(123) 456-7895',
+                phone: '323-999-APPL (2775)',
                 color: 'from-rose-500 to-rose-600'
               },
               {
                 icon: <Clock className="h-6 w-6" />,
                 title: 'Emergency',
-                phone: '(800) 123-4568',
+                phone: '323-999-APPL (2775)',
                 color: 'from-red-500 to-red-600'
               },
               {
                 icon: <Mail className="h-6 w-6" />,
                 title: 'General Inquiries',
-                phone: '(123) 456-7890',
+                phone: '323-999-APPL (2775)',
                 color: 'from-indigo-500 to-indigo-600'
               },
               {
                 icon: <MapPin className="h-6 w-6" />,
                 title: 'Facility Tours',
-                phone: '(123) 456-7899',
+                phone: '323-999-APPL (2775)',
                 color: 'from-teal-500 to-teal-600'
               }
             ].map((department, index) => (
