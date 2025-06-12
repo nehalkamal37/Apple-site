@@ -101,9 +101,10 @@ const PrivacyNoticePage = () => {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="font-semibold text-lg">Apple Specialty Pharmacy</p>
-                <p>123 Pharmacy Way</p>
-                <p>Healthville, CA 90210</p>
-                <p>Phone: (123) 456-7890</p>
+                          <span>1211 N. Broadway, Ste 300
+<br/>Santa Ana, CA 92701</span>
+
+                <p>Phone: <span>323-999-APPL (2775)</span> </p>
                 <p>Email: privacy@applespecialtypharmacy.com</p>
               </div>
             </div>
