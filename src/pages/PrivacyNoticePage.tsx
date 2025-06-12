@@ -105,7 +105,7 @@ const PrivacyNoticePage = () => {
 <br/>Santa Ana, CA 92701</span>
 
                 <p>Phone: <span>323-999-APPL (2775)</span> </p>
-                <p>Email: privacy@applespecialtypharmacy.com</p>
+                <p>Fax: 323-955-APPL (2775)</p>
               </div>
             </div>
 
