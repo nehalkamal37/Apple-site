@@ -1,5 +1,6 @@
-import { MapPin, Phone, Mail, Clock, MessageCircle, Users, CreditCard, FileText, HeartPulse } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Users, CreditCard, FileText, HeartPulse, Contact } from 'lucide-react';
 import { motion } from 'framer-motion';
+import ContactForm  from '../components/ui/ContactForm';
 
 const ContactPage = () => {
   return (
@@ -385,7 +386,9 @@ const Section = ({ children, className = '' }: { children: React.ReactNode, clas
   </section>
 );
 
+<ContactForm />
 // Contact Form Component (simplified for example)
+{/*
 const ContactForm = () => (
   <form className="space-y-6">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -434,5 +437,5 @@ const ContactForm = () => (
     </button>
   </form>
 );
-
+*/}
 export default ContactPage;
