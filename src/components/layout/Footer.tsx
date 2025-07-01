@@ -88,10 +88,10 @@ export const Footer = () => {
                 <Link to="/non-discrimination" className="text-gray-400 hover:text-white transition-colors">Non-Discrimination</Link>
               </li>
               <li>
-                <span className="text-gray-400">License #: 12345678</span>
+                <span className="text-gray-400"></span>
               </li>
               <li>
-                <span className="text-gray-400">NABP: AB-1234567</span>
+                <span className="text-gray-400"></span>
               </li>
             </ul>
           </div>

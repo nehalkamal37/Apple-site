@@ -188,12 +188,14 @@ const AboutPage = () => {
                 </svg>
                 <span>ACHC (Accreditation Commission for Health Care)</span>
               </li>
+               {/*
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>NABP Digital Pharmacy Accreditation</span>
               </li>
+               */}
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -212,12 +214,16 @@ const AboutPage = () => {
           >
             <h3 className="text-xl font-semibold mb-4">Licenses & Certifications</h3>
             <ul className="space-y-3">
+              
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Licensed in 50 states and territories</span>
+                <span>Licensure status pending confirmation</span>
+
               </li>
+              
+              
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

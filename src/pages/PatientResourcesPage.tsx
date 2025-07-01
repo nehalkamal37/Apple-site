@@ -12,8 +12,12 @@ import { Card } from '../components/ui/Card';
 import { Faq } from '../components/common/Faq';
 import { Button } from '../components/ui/Button';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { DownloadNoticeModal } from '../components/ui/DownloadModal';
 
 const PatientResourcesPage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <>
       <Hero
@@ -77,7 +81,11 @@ const PatientResourcesPage = () => {
               <p className="text-gray-600 mb-4">
                 Access detailed information about your condition and medications to better understand your treatment.
               </p>
-              <Button variant="primary">Browse Library</Button>
+                 <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
+                  Browse Library
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
 
@@ -96,7 +104,11 @@ const PatientResourcesPage = () => {
               <p className="text-gray-600 mb-4">
                 Information on copay assistance programs, patient foundations, and manufacturer support programs.
               </p>
-              <Button variant="primary">Explore Options</Button>
+                <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
+                  Explore Options
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
 
@@ -115,7 +127,11 @@ const PatientResourcesPage = () => {
               <p className="text-gray-600 mb-4">
                 Download important forms for enrollment, consent, refills, and insurance documentation.
               </p>
-              <Button variant="primary">View Documents</Button>
+                <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
+                 View Forms
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
         </div>
@@ -144,7 +160,12 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">New Patient Enrollment Form</h3>
               <p className="text-gray-600 text-sm mb-2">PDF document - 325 KB</p>
-              <Button variant="text" size="sm">Download</Button>
+              <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
+                  Download
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+
             </div>
           </motion.div>
 
@@ -161,7 +182,11 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Medication Refill Request</h3>
               <p className="text-gray-600 text-sm mb-2">PDF document - 215 KB</p>
-              <Button variant="text" size="sm">Download</Button>
+   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
+                  Download
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
 
@@ -178,7 +203,11 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Insurance Information Update</h3>
               <p className="text-gray-600 text-sm mb-2">PDF document - 180 KB</p>
-              <Button variant="text" size="sm">Download</Button>
+   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
+                  Download
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
 
@@ -195,7 +224,11 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Medication Guide & Instructions</h3>
               <p className="text-gray-600 text-sm mb-2">PDF document - 450 KB</p>
-              <Button variant="text" size="sm">Download</Button>
+   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
+                  Download
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
 
@@ -212,7 +245,11 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Financial Assistance Application</h3>
               <p className="text-gray-600 text-sm mb-2">PDF document - 375 KB</p>
-              <Button variant="text" size="sm">Download</Button>
+   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
+                  Download
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
 
@@ -229,7 +266,11 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Authorization for Release of Information</h3>
               <p className="text-gray-600 text-sm mb-2">PDF document - 290 KB</p>
-              <Button variant="text" size="sm">Download</Button>
+   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
+                  Download
+</Button>
+
+<DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
           </motion.div>
         </div>
@@ -277,6 +318,7 @@ const PatientResourcesPage = () => {
               <HelpCircle className="mr-2 h-5 w-5" />
               <span className="font-medium">Have other questions?</span>
             </div>
+            {/*
             <Button 
               variant="primary"
               icon={<Phone className="h-4 w-4" />}
@@ -284,6 +326,17 @@ const PatientResourcesPage = () => {
             >
               Contact Our Support Team
             </Button>
+*/}
+            <a href="tel:13239992775">
+  <Button
+    variant="primary"
+    icon={<Phone className="h-4 w-4" />}
+    iconPosition="left"
+  >
+              Contact Our Support Team
+  </Button>
+</a>
+
           </div>
         </div>
       </Section>
@@ -298,6 +351,81 @@ const PatientResourcesPage = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
+  <div>
+    <h3 className="text-xl font-semibold mb-3">Condition-Specific Organizations</h3>
+    <p className="text-gray-600 mb-4">
+      Connect with national organizations that provide education, research, and support for specific conditions.
+    </p>
+    <ul className="space-y-2 text-primary-600">
+      <li><a href="#" className="hover:underline">American Cancer Society</a></li>
+      <li><a href="#" className="hover:underline">National Multiple Sclerosis Society</a></li>
+      <li><a href="#" className="hover:underline">Arthritis Foundation</a></li>
+      <li><a href="#" className="hover:underline">Crohn's & Colitis Foundation</a></li>
+      <li><a href="#" className="hover:underline">National Psoriasis Foundation</a></li>
+    </ul>
+  </div>
+  <p className="text-xs text-yellow-600 mt-4">
+    * External links are being finalized and will be added once confirmed by our operations team.
+  </p>
+</Card>
+
+<Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
+  <div>
+    <h3 className="text-xl font-semibold mb-3">Financial Resources</h3>
+    <p className="text-gray-600 mb-4">
+      Programs and foundations that may help with medication costs and financial assistance.
+    </p>
+    <div className="bg-yellow-50 border-l-4 border-yellow-400 text-yellow-700 p-4 mb-4 rounded">
+      <p className="text-sm">
+        <strong>Notice:</strong> Relationships with the listed entities are currently under review. Final descriptions and affiliations will be updated once confirmed.
+      </p>
+    </div>
+    <ul className="space-y-2 text-primary-600">
+      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">Patient Advocate Foundation</span></li>
+      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">NeedyMeds</span></li>
+      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">GoodRx</span></li>
+      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">Patient Access Network Foundation</span></li>
+      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">Partnership for Prescription Assistance</span></li>
+    </ul>
+    {/*
+        <a href="#" className="hover:underline">NeedyMeds</a></li>
+      <li><a href="#" className="hover:underline">GoodRx</a></li>
+      <li><a href="#" className="hover:underline">Patient Access Network Foundation</a></li>
+      <li><a href="#" className="hover:underline">Partnership for Prescription Assistance</a></li>
+    </ul>
+    */}
+  </div>
+  <p className="text-xs text-yellow-600 mt-4">
+    * External links are being finalized and will be added once confirmed by our operations team.
+  </p>
+</Card>
+
+<Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
+  <div>
+    <h3 className="text-xl font-semibold mb-3">Support Communities</h3>
+    <p className="text-gray-600 mb-4">
+      Connect with others who understand what you're going through and share experiences.
+    </p>
+    <ul className="space-y-2 text-primary-600">
+      <li><a href="#" className="hover:underline">Patient Community Forums</a></li>
+      <li><a href="#" className="hover:underline">Caregiver Support Networks</a></li>
+      <li><a href="#" className="hover:underline">Local Support Groups Directory</a></li>
+      <li><a href="#" className="hover:underline">Virtual Support Meetings</a></li>
+      <li><a href="#" className="hover:underline">Peer Mentoring Programs</a></li>
+    </ul>
+  </div>
+  <p className="text-xs text-yellow-600 mt-4">
+    * External links are being finalized and will be added once confirmed by our operations team.
+  </p>
+</Card>
+
+
+
+
+
+{/*
+
           <Card className="p-6" animation>
             <h3 className="text-xl font-semibold mb-3">Condition-Specific Organizations</h3>
             <p className="text-gray-600 mb-4">
@@ -321,6 +449,36 @@ const PatientResourcesPage = () => {
               </li>
             </ul>
           </Card>
+<Card className="p-6" animation>
+  <h3 className="text-xl font-semibold mb-3">Financial Resources</h3>
+  <p className="text-gray-600 mb-4">
+    Programs and foundations that may help with medication costs and financial assistance.
+  </p>
+
+  <div className="bg-yellow-50 border-l-4 border-yellow-400 text-yellow-700 p-4 mb-4 rounded">
+    <p className="text-sm">
+      <strong>Notice:</strong> Relationships with the listed entities are currently under review. Final descriptions and affiliations will be updated once confirmed.
+    </p>
+  </div>
+
+  <ul className="space-y-2 text-primary-600">
+    <li>
+      <a href="#" className="hover:underline">Patient Advocate Foundation</a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">NeedyMeds</a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">GoodRx</a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">Patient Access Network Foundation</a>
+    </li>
+    <li>
+      <a href="#" className="hover:underline">Partnership for Prescription Assistance</a>
+    </li>
+  </ul>
+</Card>
 
           <Card className="p-6" animation>
             <h3 className="text-xl font-semibold mb-3">Financial Resources</h3>
@@ -369,6 +527,7 @@ const PatientResourcesPage = () => {
               </li>
             </ul>
           </Card>
+*/}
         </div>
       </Section>
     </>
