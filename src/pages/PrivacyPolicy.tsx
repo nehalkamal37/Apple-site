@@ -92,12 +92,16 @@ const PrivacyPolicy: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               {[
+
+            
                 { id: "#info-collect", text: "1. Information We Collect", icon: User },
                 { id: "#use-info", text: "2. How We Use Your Information", icon: Server },
-                { id: "#share-info", text: "3. How We Share Information", icon: Shield },
+              //  { id: "#share-info", text: "3. How We Share Information", icon: Shield },
                 { id: "#rights", text: "4. Your Privacy Rights", icon: Lock },
                 { id: "#security", text: "5. Data Security", icon: Lock },
-                { id: "#contact", text: "8. Contact Us", icon: Mail }
+                { id: "#contact", text: "8. Contact Us", icon: Mail },
+                { id: "#legal-references", text: "9. Legal References", icon: ClipboardList }
+                
               ].map((item) => (
                 <li key={item.id}>
                   <a 
@@ -274,6 +278,7 @@ const PrivacyPolicy: React.FC = () => {
                         "Know what personal information is collected",
                         "Access specific personal information",
                         "Request deletion or correction",
+                        "Correct inaccurate personal information",
                         "Limit use of sensitive information",
                         "Opt out of sale/sharing"
                       ].map((right, index) => (
@@ -293,19 +298,22 @@ const PrivacyPolicy: React.FC = () => {
                   id: "security",
                   title: "5. Data Security",
                   icon: Lock,
-                  content: "We use administrative, technical, and physical safeguards to protect your data. No system is completely secure; notify us if you suspect a breach.",
+                  content: "We use administrative, technical, and physical safeguards to protect your PHI and personal information. However, no system is completely secure. Please notify us immediately if you believe your information has been compromised.",
+                  //We use administrative, technical, and physical safeguards to protect your data. No system is completely secure; notify us if you suspect a breach.",
                   color: "green"
                 },
                 {
                   id: "children",
                   title: "6. Children's Privacy",
-                  content: "Our services are not directed to children under 13. We do not knowingly collect data from children under 13.",
+                  content: "Our services are not directed to children under 13. We do not knowingly collect personal information from children under 13.",
+                  //Our services are not directed to children under 13. We do not knowingly collect data from children under 13.",
                   color: "purple"
                 },
                 {
                   id: "changes",
                   title: "7. Changes to This Policy",
-                  content: "We may update this policy periodically. Changes will be posted with a new 'Last Updated' date.",
+                  content: "We may update this Privacy Policy periodically. Changes will be posted on our website with a new “Last Updated” date.",
+                  //We may update this policy periodically. Changes will be posted with a new 'Last Updated' date.",
                   color: "blue"
                 }
               ].map((section) => (
@@ -325,15 +333,19 @@ const PrivacyPolicy: React.FC = () => {
               {/* Contact Section */}
               <section id="contact" className="scroll-mt-20">
                 <div className="flex items-center mb-6">
+
                   <div className="p-2 rounded-lg bg-primary-100 mr-4">
                     <Mail className="h-6 w-6 text-primary-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800">8. Contact Us</h3>
                 </div>
-                
+           
                 <div className="ml-12">
+                  
                   <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-6 border border-gray-200">
                     <address className="not-italic space-y-3">
+                          <p>If you have questions about this Privacy Policy, or to exercise your privacy rights:
+</p>
                       <div className="flex items-start">
                         <div className="mt-1 mr-3 text-primary-600">
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -363,6 +375,68 @@ const PrivacyPolicy: React.FC = () => {
                   </div>
                 </div>
               </section>
+
+
+
+              {/* Legal References Section */}
+<section id="legal-references" className="mb-12 scroll-mt-20">
+  <div className="flex items-center mb-4">
+    <ClipboardList className="h-6 w-6 text-primary-600 mr-2" />
+    <h3 className="text-2xl font-bold text-gray-800">9. Legal References</h3>
+  </div>
+
+  <details className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-200">
+    <summary className="cursor-pointer text-lg font-medium text-gray-800">
+      Show all referenced laws & regulations
+    </summary>
+   <div className="mt-4 space-y-4 text-sm text-gray-700">
+    <p><strong>HIPAA (Health Insurance Portability and Accountability Act of 1996)</strong><br />
+    Statute: Public Law 104-191<br />
+    Key Regulations: Privacy Rule (45 C.F.R. Part 160 and Part 164 Subparts A and E); Security Rule (45 C.F.R. Part 160 and Part 164 Subparts A and C); Breach Notification Rule (45 C.F.R. §§ 164.400–414).<br />
+    Scope: Governs how covered entities (including pharmacies) may use and disclose protected health information (PHI), patients’ privacy rights, and safeguards required for PHI.</p>
+
+    <p><strong>HITECH Act (Health Information Technology for Economic and Clinical Health Act of 2009)</strong><br />
+    Statute: Title XIII of the American Recovery and Reinvestment Act of 2009, Public Law 111-5.<br />
+    Key Provisions: Strengthens HIPAA privacy and security protections; Introduces mandatory breach notification requirements.<br />
+    Scope: Imposes additional privacy and security requirements on HIPAA-covered entities and business associates.</p>
+
+    <p><strong>Federal Trade Commission Act (FTC Act)</strong><br />
+    Statute: 15 U.S.C. §§ 41-58.<br />
+    Key Section: Section 5 prohibits unfair or deceptive acts or practices in commerce.<br />
+    Scope: Applies to representations made in website privacy policies and marketing statements. False statements about privacy practices may constitute deceptive practices under the FTC Act.</p>
+
+    <p><strong>California Confidentiality of Medical Information Act (CMIA)</strong><br />
+    Statute: California Civil Code §§ 56-56.37.<br />
+    Scope: Regulates the collection, use, and disclosure of medical information by healthcare providers, health plans, contractors, and other entities. Protects medical information beyond HIPAA where California law is stricter.</p>
+
+    <p><strong>California Consumer Privacy Act (CCPA) & California Privacy Rights Act (CPRA)</strong><br />
+    Statutes: Original Law: California Civil Code §§ 1798.100 – 1798.199; Amended by CPRA: Effective January 1, 2023.<br />
+    Scope: Gives California residents rights to know what personal information is collected, how it's used and shared; request deletion or correction; limit use of sensitive personal information; opt out of sale or sharing of personal data (we do not sell PHI). Applies to businesses meeting certain revenue or data thresholds—even healthcare businesses for data outside HIPAA’s scope.</p>
+
+    <p><strong>California Online Privacy Protection Act (CalOPPA)</strong><br />
+    Statute: California Business & Professions Code §§ 22575–22579.<br />
+    Scope: Requires operators of commercial websites collecting personally identifiable information from California residents to post a privacy policy conspicuously, disclose how personal information is collected, used, and shared, and include an effective date and updates. Applies to any website accessible to California residents.</p>
+
+    <p><strong>California Data Breach Notification Law</strong><br />
+    Statutes: California Civil Code §§ 1798.29, 1798.82.<br />
+    Scope: Requires notification to California residents in the event of unauthorized access to certain personal information, including medical information and health insurance information. Stricter in some respects than federal breach notification rules.</p>
+
+    <p><strong>Other Relevant Laws</strong><br />
+    • CAN-SPAM Act (15 U.S.C. §§ 7701–7713): Governs commercial email communications, requiring opt-out mechanisms and truthful subject lines.<br />
+    • Telephone Consumer Protection Act (TCPA) (47 U.S.C. § 227): Regulates marketing calls and texts.<br />
+    • Americans with Disabilities Act (ADA): Web accessibility considerations for individuals with disabilities.</p>
+
+    <p><strong>Practical Takeaways</strong><br />
+    • HIPAA remains the primary regulation for handling PHI.<br />
+    • CMIA imposes additional privacy requirements for California residents.<br />
+    • CCPA/CPRA applies to non-HIPAA personal data collected through the website.<br />
+    • CalOPPA requires a publicly accessible privacy policy.<br />
+    • Federal and state breach notification laws dictate how to handle data incidents.</p>
+
+  </div>
+  </details>
+</section>
+
             </div>
           </motion.article>
         </motion.div>
