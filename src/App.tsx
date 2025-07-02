@@ -14,6 +14,7 @@ import EsBrochurePage from './pages/esHome';
 import TriFoldPage from './pages/TriFoldPage';
 import BrochureInside from './pages/BrochureInside';
 import PatientPostcardPage from './pages/PatientPostcardPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 function App() {
   return (
     <Router>
@@ -23,9 +24,9 @@ function App() {
           <Route path="/" element={<BrochurePage />} />
           <Route path="/es" element={<EsBrochurePage />} />
             <Route path="/trifold" element={<TriFoldPage />} />
-<Route path="/brochure-inside" element={<BrochureInside />} />
-<Route path="/patient-postcard" element={<PatientPostcardPage />} />
-
+          <Route path="/brochure-inside" element={<BrochureInside />} />
+          <Route path="/patient-postcard" element={<PatientPostcardPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/prescriber-portal" element={<PrescriberPortalPage />} />

@@ -20,22 +20,23 @@ const PrivacyNoticePage = () => {
             </div>
 
             <p className="text-lg mb-6">
-              This Privacy Notice is a placeholder pending approval of a fully HIPAA-compliant version.
-              We are currently reviewing and updating our privacy practices in accordance with federal regulations.
+
+             
+Apple Specialty Pharmacy (“we,” “us,” or “our”) is committed to protecting your privacy and safeguarding your health information. This Privacy Policy explains how we collect, use, disclose, and protect your information, including protected health information (“PHI”) under the Health Insurance Portability and Accountability Act of 1996 (“HIPAA”), and your rights under federal and California law.
+
+         
             </p>
 
-            <p className="text-lg mb-6">
-              A finalized HIPAA-compliant Notice of Privacy Practices will be published on this page once approved
-              by our legal and compliance teams.
+            <p className="text-lg mb-6">By using our website https://applespecialtypharmacy.com/ or our services, you agree to the following Privacy Policy.
+
             </p>
 
             <p className="text-sm text-gray-500 italic">
-              (This notice is temporary and for informational purposes only.)
             </p>
 
             <div className="mt-10 pt-8 border-t border-gray-200">
               <p className="text-sm text-gray-600">
-                Last Updated: June 30, 2025
+Last Updated:07/01/2025
               </p>
             </div>
           </div>

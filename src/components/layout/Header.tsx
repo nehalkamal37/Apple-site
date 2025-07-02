@@ -22,7 +22,7 @@ export const Header = () => {
 
     { name: 'Patient Resources', href: 'patient-resources', current: location.pathname === '/patient-resources' },
     { name: 'Contact Us', href: '/contact', current: location.pathname === '/contact' },
-    { name: 'Privacy Notice', href: '/privacy-notice', current: location.pathname === '/privacy-notice' },
+    { name: 'Privacy Policy', href: '/privacy-policy', current: location.pathname === '/privacy-policy' },
   ];
 
   // Handle scroll effect for header
