@@ -29,6 +29,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="mb-4 text-gray-400">Modern Care • Personalized Precision</p>
+            {/*
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
                 <Facebook size={20} />
@@ -47,6 +48,7 @@ export const Footer = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
             </div>
+            */}
           </div>
 
           {/* Quick Links */}
@@ -128,9 +130,11 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="text-center text-sm text-gray-500">
           <p>&copy; {year} Apple Specialty Pharmacy. All rights reserved.</p>
+          {/*
           <p className="mt-2">
             Website design is for demonstration purposes. All information is placeholder content.
           </p>
+          */}
         </div>
       </div>
     </footer>

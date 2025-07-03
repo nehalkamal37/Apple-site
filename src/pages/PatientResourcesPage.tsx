@@ -287,10 +287,12 @@ const PatientResourcesPage = () => {
 
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-card p-8">
           <div className="divide-y">
+            {/*
             <Faq 
               question="How do I refill my prescription?"
               answer="You can request a refill by calling our pharmacy directly at (123) 456-7890, using our online refill form, or through our mobile app. We recommend requesting refills 5-7 days before you need them to ensure uninterrupted therapy."
             />
+            */}
             <Faq 
               question="What should I do if I miss a dose?"
               answer="If you miss a dose, follow the specific instructions provided with your medication or contact our pharmacy for guidance. Do not double up on doses unless specifically instructed to do so by your healthcare provider."
@@ -358,16 +360,23 @@ const PatientResourcesPage = () => {
       Connect with national organizations that provide education, research, and support for specific conditions.
     </p>
     <ul className="space-y-2 text-primary-600">
+  <li><a href="https://www.cancer.org" target="_blank" rel="noopener noreferrer" className="hover:underline">American Cancer Society</a></li>
+  <li><a href="https://www.nationalmssociety.org" target="_blank" rel="noopener noreferrer" className="hover:underline">National Multiple Sclerosis Society</a></li>
+  <li><a href="https://www.arthritis.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Arthritis Foundation</a></li>
+  <li><a href="https://www.crohnscolitisfoundation.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Crohn's & Colitis Foundation</a></li>
+  <li><a href="https://www.psoriasis.org" target="_blank" rel="noopener noreferrer" className="hover:underline">National Psoriasis Foundation</a></li>
+</ul>
+{/*
+    <ul className="space-y-2 text-primary-600">
       <li><a href="#" className="hover:underline">American Cancer Society</a></li>
       <li><a href="#" className="hover:underline">National Multiple Sclerosis Society</a></li>
       <li><a href="#" className="hover:underline">Arthritis Foundation</a></li>
       <li><a href="#" className="hover:underline">Crohn's & Colitis Foundation</a></li>
       <li><a href="#" className="hover:underline">National Psoriasis Foundation</a></li>
     </ul>
+    */}
   </div>
-  <p className="text-xs text-yellow-600 mt-4">
-    * External links are being finalized and will be added once confirmed by our operations team.
-  </p>
+ 
 </Card>
 
 <Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
@@ -378,16 +387,19 @@ const PatientResourcesPage = () => {
     </p>
     <div className="bg-yellow-50 border-l-4 border-yellow-400 text-yellow-700 p-4 mb-4 rounded">
       <p className="text-sm">
-        <strong>Notice:</strong> Relationships with the listed entities are currently under review. Final descriptions and affiliations will be updated once confirmed.
+        <strong>Notice:</strong> Apple Specialty Pharmacy has no financial affiliation with
+         the organizations listed above. These links are provided for patient convenience only.
       </p>
     </div>
     <ul className="space-y-2 text-primary-600">
-      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">Patient Advocate Foundation</span></li>
-      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">NeedyMeds</span></li>
-      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">GoodRx</span></li>
-      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">Patient Access Network Foundation</span></li>
-      <li><span className="text-primary-400 italic cursor-not-allowed" title="Link coming soon">Partnership for Prescription Assistance</span></li>
-    </ul>
+  <li><a href="https://www.patientadvocate.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Patient Advocate Foundation</a></li>
+  <li><a href="https://www.needymeds.org" target="_blank" rel="noopener noreferrer" className="hover:underline">NeedyMeds</a></li>
+  <li><a href="https://www.goodrx.com" target="_blank" rel="noopener noreferrer" className="hover:underline">GoodRx</a></li>
+  <li><a href="https://www.panfoundation.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Patient Access Network Foundation</a></li>
+  <li><a href="https://www.pparx.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Partnership for Prescription Assistance</a></li>
+</ul>
+
+ 
     {/*
         <a href="#" className="hover:underline">NeedyMeds</a></li>
       <li><a href="#" className="hover:underline">GoodRx</a></li>
@@ -396,9 +408,7 @@ const PatientResourcesPage = () => {
     </ul>
     */}
   </div>
-  <p className="text-xs text-yellow-600 mt-4">
-    * External links are being finalized and will be added once confirmed by our operations team.
-  </p>
+ 
 </Card>
 
 <Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
@@ -408,16 +418,14 @@ const PatientResourcesPage = () => {
       Connect with others who understand what you're going through and share experiences.
     </p>
     <ul className="space-y-2 text-primary-600">
-      <li><a href="#" className="hover:underline">Patient Community Forums</a></li>
-      <li><a href="#" className="hover:underline">Caregiver Support Networks</a></li>
-      <li><a href="#" className="hover:underline">Local Support Groups Directory</a></li>
-      <li><a href="#" className="hover:underline">Virtual Support Meetings</a></li>
-      <li><a href="#" className="hover:underline">Peer Mentoring Programs</a></li>
-    </ul>
-  </div>
-  <p className="text-xs text-yellow-600 mt-4">
-    * External links are being finalized and will be added once confirmed by our operations team.
-  </p>
+  <li><a href="https://www.inspire.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Patient Community Forums (Inspire)</a></li>
+  <li><a href="https://www.caregiveraction.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Caregiver Support Networks</a></li>
+  <li><a href="https://www.psychologytoday.com/us/groups" target="_blank" rel="noopener noreferrer" className="hover:underline">Local Support Groups Directory</a></li>
+  <li><a href="https://www.supportgroupscentral.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Virtual Support Meetings</a></li>
+  <li><a href="https://www.cancer.org/treatment/support-programs-and-services/patient-navigator-program.html" target="_blank" rel="noopener noreferrer" className="hover:underline">Peer Mentoring Programs (ACS)</a></li>
+</ul>
+
+   </div>
 </Card>
 
 

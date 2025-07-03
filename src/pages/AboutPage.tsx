@@ -157,7 +157,7 @@ const AboutPage = () => {
         </div>
       </Section>
 
-      {/* Accreditations & Licenses */}
+      {/* Accreditations & Licenses 
       <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Accreditations & Licenses</h2>
@@ -188,14 +188,14 @@ const AboutPage = () => {
                 </svg>
                 <span>ACHC (Accreditation Commission for Health Care)</span>
               </li>
-               {/*
+               
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>NABP Digital Pharmacy Accreditation</span>
               </li>
-               */}
+               
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -244,10 +244,12 @@ const AboutPage = () => {
               </li>
             </ul>
           </motion.div>
+          
         </div>
       </Section>
+*/}
+      {/* Leadership Team 
 
-      {/* Leadership Team */}
       <Section bgColor="primary">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
@@ -321,6 +323,8 @@ const AboutPage = () => {
           </motion.div>
         </div>
       </Section>
+*/}
+
     </>
   );
 };
