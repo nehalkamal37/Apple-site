@@ -25,17 +25,19 @@ const PrivacyPolicy: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <Hero
-          title="Privacy Policy"
-          subtitle="Your data security is our top priority"
-          description="Last Updated: 07/01/2025"
-          bgImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          className="h-80 md:h-96"
-          overlay="rgba(0, 0, 0, 0.5)"
-          titleClass="text-4xl md:text-5xl font-bold text-white"
-          subtitleClass="text-xl md:text-2xl text-primary-200"
-          descriptionClass="text-gray-200"
-        />
+      <Hero
+  title="Privacy Policy"
+  subtitle="Your data security is our top priority"
+  description="Last Updated: 07/01/2025"
+  
+bgImage="https://www.zdnet.com/a/img/resize/91aa4849fd23eeb83bb44efa1771a6297999e0cc/2023/02/28/30dbc73f-cc0e-4d3f-9ac2-260e55f04f28/gettyimages-1350595566.jpg?auto=webp&width=1280"
+  className="h-80 md:h-96"
+  overlay="rgba(0, 0, 0, 0.5)"
+  titleClass="text-4xl md:text-5xl font-bold text-white"
+  subtitleClass="text-xl md:text-2xl text-primary-200"
+  descriptionClass="text-gray-200"
+/>
+
                <div className="absolute bottom-3 left-0 right-0 text-center">
       <p className="text-gray-200 text-sm md:text-base bg-black/30 inline-block px-4 py-2 rounded-full">
         Last Updated: July 1, 2025
@@ -330,53 +332,61 @@ const PrivacyPolicy: React.FC = () => {
                 </section>
               ))}
 
+
               {/* Contact Section */}
-              <section id="contact" className="scroll-mt-20">
-                <div className="flex items-center mb-6">
+<section id="contact" className="scroll-mt-20 mb-12">
+  <div className="flex items-center mb-6">
+    <div className="p-2 rounded-lg bg-primary-100 mr-4">
+      <Mail className="h-6 w-6 text-primary-600" />
+    </div>
+    <h3 className="text-2xl font-bold text-gray-800">8. Contact Us</h3>
+  </div>
 
-                  <div className="p-2 rounded-lg bg-primary-100 mr-4">
-                    <Mail className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800">8. Contact Us</h3>
-                </div>
-           
-                <div className="ml-12">
-                  
-                  <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-6 border border-gray-200">
-                    <address className="not-italic space-y-3">
-                          <p>If you have questions about this Privacy Policy, or to exercise your privacy rights:
-</p>
-                      <div className="flex items-start">
-                        <div className="mt-1 mr-3 text-primary-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                        <div>
-                          <strong className="block text-lg text-gray-800">Apple Specialty Pharmacy</strong>
-                          <span className="text-gray-700">1211 N. Broadway, Ste 300<br />Santa Ana, CA 92701</span>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center">
-                        <Mail className="h-5 w-5 text-primary-600 mr-3" />
-                        <a href="mailto:requests@applespecialtypharmacy.com" className="text-primary-600 hover:text-primary-800 transition-colors underline">requests@applespecialtypharmacy.com</a>
-                      </div>
-                      
-                      <div className="flex items-center">
-                        <Phone className="h-5 w-5 text-primary-600 mr-3" />
-                        <a href="tel:3239992775" className="text-primary-600 hover:text-primary-800 transition-colors underline">(323) 999-2775</a>
-                      </div>
-                      
-                      <div className="pt-2 mt-2 border-t border-gray-200">
-                        <span className="text-gray-600">Attn: Privacy Officer</span>
-                      </div>
-                    </address>
-                  </div>
-                </div>
-              </section>
+  <div className="ml-12">
+    <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-6 border border-gray-200">
+      <address className="not-italic space-y-3">
+        <p>If you have questions about this Privacy Policy, or to exercise your privacy rights:</p>
+
+        <div className="flex items-start">
+          <div className="mt-1 mr-3 text-primary-600">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <strong className="block text-lg text-gray-800">Apple Specialty Pharmacy</strong>
+            <span className="text-gray-700">
+              1211 N. Broadway, Ste 300<br />Santa Ana, CA 92701
+            </span>
+          </div>
+        </div>
+
+        <div className="flex items-center">
+          <Mail className="h-5 w-5 text-primary-600 mr-3" />
+          <a href="mailto:requests@applespecialtypharmacy.com" className="text-primary-600 hover:text-primary-800 transition-colors underline">
+            requests@applespecialtypharmacy.com
+          </a>
+        </div>
+
+        <div className="flex items-center">
+          <Phone className="h-5 w-5 text-primary-600 mr-3" />
+          <a href="tel:3239992775" className="text-primary-600 hover:text-primary-800 transition-colors underline">
+            (323) 999-2775
+          </a>
+        </div>
+
+        <div className="pt-2 mt-2 border-t border-gray-200">
+          <span className="text-gray-600">Attn: Privacy Officer</span>
+        </div>
+      </address>
+    </div>
+  </div>
+</section>
 
 
+
+
+          
 
               {/* Legal References Section */}
 <section id="legal-references" className="mb-12 scroll-mt-20">

@@ -4,27 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-theme: {
-  extend: {
-     lineHeight: {
-      relaxed: '1.625',  // already exists
-      normal: '1.5',
-    },
-  /*  colors: {
-     
-      gray: {
-        700: '#374151', // dark enough for text
-        800: '#1f2937',
-        900: '#111827',
-      
-    },
-    lineHeight: {
-      relaxed: '1.625',
-    },
-  
-
-
-
         primary: {
           50: '#f0f9f6',
           100: '#d0ece3',
@@ -98,62 +77,6 @@ theme: {
           900: '#7f1d1d',
         },
       },
-      */
-     // tailwind.config.js
-
-      colors: {
-        // PRIMARY BRAND COLORS
-        primary: {
-          50:  '#eef6fc',
-          100: '#dbeffc',
-          200: '#b7ddf8',
-          300: '#87c5f1',
-          400: '#4aa5e4',
-          500: '#1e88e5',  // AA on white
-          600: '#1565c0',  // AAA on white
-          700: '#0d47a1',  // AAA on white
-          800: '#08306b',
-          900: '#04224a',
-        },
-        secondary: {
-          50:  '#f9f6ef',
-          100: '#f4e9d2',
-          200: '#e7d2a9',
-          300: '#d6b676',
-          400: '#c49c4f',
-          500: '#b38b3d',
-          600: '#8e6f2d',
-          700: '#6b5220',
-          800: '#4a3714',
-          900: '#2d210b',
-        },
-
-        // TEXT NEUTRALS
-        gray: {
-          50:  '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#d4d4d4',
-          400: '#a3a3a3',
-          500: '#737373',
-          600: '#525252',  // AA on white
-          700: '#404040',  // AAA on white
-          800: '#262626',  // AAA on white
-          900: '#171717',
-        },
-
-        // STATUS COLORS
-        success: {
-          500: '#2e7d32',  // AA on white
-        },
-        warning: {
-          500: '#ed6c02',  // AA on white
-        },
-        error: {
-          500: '#d32f2f',  // AA on white
-        },
-      },
-    
       fontFamily: {
         sans: [
           'SF Pro Display',

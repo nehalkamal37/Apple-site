@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, MessageCircle, Users, CreditCard, FileText, HeartPulse, Contact } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Users, CreditCard, FileText, HeartPulse, Contact, PhoneOutgoing } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ContactForm  from '../components/ui/ContactForm';
 
@@ -277,6 +277,12 @@ const ContactPage = () => {
 
       {/* Animated Department Grid */}
       <Section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+
+
+
+
+
+        
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -292,7 +298,120 @@ const ContactPage = () => {
               Direct access to our expert teams
             </p>
           </motion.div>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  {[
+    {
+      icon: <HeartPulse className="h-6 w-6" />,
+      title: 'Patient Care',
+      color: 'from-blue-500 to-blue-600'
+    },
+    {
+      icon: <FileText className="h-6 w-6" />,
+      title: 'Prescriptions',
+      color: 'from-emerald-500 to-emerald-600'
+    },
+    {
+      icon: <CreditCard className="h-6 w-6" />,
+      title: 'Billing',
+      color: 'from-purple-500 to-purple-600'
+    },
+    {
+      icon: <Users className="h-6 w-6" />,
+      title: 'Providers',
+      color: 'from-amber-500 to-amber-600'
+    },
+    {
+      icon: <MessageCircle className="h-6 w-6" />,
+      title: 'Clinical',
+      color: 'from-rose-500 to-rose-600'
+    },
+   
+    {
+      icon: <Mail className="h-6 w-6" />,
+      title: 'General Inquiries',
+      color: 'from-indigo-500 to-indigo-600'
+    },
+    {
+      icon: <MapPin className="h-6 w-6" />,
+      title: 'Facility Tours',
+      color: 'from-teal-500 to-teal-600'
+    }
+  ].map((department, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+    >
+      <div className={`bg-gradient-to-r ${department.color} h-2`} />
+      <div className="p-6">
+        <div className="flex items-center mb-6">
+          <div className={`bg-gradient-to-r ${department.color} p-3 rounded-lg mr-4 text-white`}>
+            {department.icon}
+          </div>
+          <h3 className="text-xl font-bold">{department.title}</h3>
+        </div>
 
+        {/* Combined Contact Info */}
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="text-center mb-10"
+>
+ 
+
+  {/* Better Styled Combined Contact Info */}
+  <div className="flex flex-wrap justify-center items-center gap-4 mt-6">
+    <div className="flex items-center gap-2 bg-primary-50 px-4 py-2 rounded-full shadow">
+      <Phone className="h-5 w-5 text-primary-700" />
+      <span className="font-medium text-primary-900">Phone: 323-999-APPL (2775)</span>
+    </div>
+
+    <div className="flex items-center gap-2 bg-primary-50 px-4 py-2 rounded-full shadow">
+      <PhoneOutgoing className="h-5 w-5 text-primary-700" />
+      <span className="font-medium text-primary-900">Fax: 323-955-APPL (2775)</span>
+    </div>
+
+    <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full shadow">
+      <Mail className="h-5 w-5 text-blue-700" />
+      <span className="font-medium text-blue-900 break-all">
+        Requests@applespecilatypharmacy.com
+      </span>
+    </div>
+  </div>
+</motion.div>
+
+
+{/*
+        <div className="space-y-3 mb-6">
+          <div className="flex items-center">
+            <Phone className="h-5 w-5 text-gray-500 mr-3" />
+            <span className="font-medium">323-999-APPL (2775)</span>
+          </div>
+          <div className="flex items-center">
+            <PhoneOutgoing className="h-5 w-5 text-gray-500 mr-3" />
+            <span className="font-medium">Fax: 323-999-2776</span>
+          </div>
+          <div className="flex items-center">
+            <Mail className="h-5 w-5 text-gray-500 mr-3" />
+            <span className="font-medium">Requests@applespecilatypharmacy.com</span>
+          </div>
+        </div>
+
+        <button className="w-full py-2 px-4 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-300 font-medium">
+          Contact Team
+        </button>
+        */}
+      </div>
+    </motion.div>
+  ))}
+</div>
+
+{/*
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
@@ -325,12 +444,7 @@ const ContactPage = () => {
                 phone: '323-999-APPL (2775)',
                 color: 'from-rose-500 to-rose-600'
               },
-              {
-                icon: <Clock className="h-6 w-6" />,
-                title: 'Emergency',
-                phone: '323-999-APPL (2775)',
-                color: 'from-red-500 to-red-600'
-              },
+             
               {
                 icon: <Mail className="h-6 w-6" />,
                 title: 'General Inquiries',
@@ -371,6 +485,7 @@ const ContactPage = () => {
               </motion.div>
             ))}
           </div>
+          */}
         </div>
       </Section>
     </div>

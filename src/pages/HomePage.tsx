@@ -60,9 +60,7 @@ const insurances = [
   "Private Insurance",
   "Commercial Plans",
   "Most Major PBMs",
-  "ADAP",
-  "Ryan White",
-  "and more",
+
 ];
 
 export default function BrochurePage() {
@@ -163,7 +161,7 @@ export default function BrochurePage() {
             />
           </motion.div>
 
-          {/* Get Started Panel */}
+          {/* Get Started Panel 
           <motion.div
             variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
             className="bg-white p-8 rounded-2xl shadow-lg"
@@ -186,6 +184,55 @@ export default function BrochurePage() {
               ))}
             </ul>
           </motion.div>
+*/}
+          {/* Get Started Panel */}
+<motion.div
+  variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+  className="bg-white p-8 rounded-2xl shadow-lg"
+>
+  <h2 className="text-3xl font-extrabold text-primary-900 mb-4">
+    Get Started Today
+  </h2>
+  <p className="text-gray-800 mb-6 leading-relaxed">
+    Let Apple Specialty Pharmacy take the stress out of specialty care.
+  </p>
+  <ul className="space-y-4">
+    {getStartedItems.map(({ Icon, text }, i) => (
+      <li
+        key={i}
+        className="flex items-center bg-primary-50 rounded-full px-4 py-2 hover:shadow-md transition-shadow min-h-[44px]"
+      >
+        <Icon className="h-5 w-5 text-primary-700 mr-3" />
+        <span className="whitespace-pre-wrap font-medium">{text}</span>
+      </li>
+    ))}
+
+    {/* New Refills Text Number Item */}
+    <li
+      className="flex items-center bg-primary-50 rounded-full px-4 py-2 hover:shadow-md transition-shadow min-h-[44px]"
+    >
+      {/* Pill Icon (you can replace it with any icon library you use) */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5 text-primary-700 mr-3"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M11.25 3.75l9 9m-9-9a4.5 4.5 0 010 6.364m0-6.364L3.75 11.25m0 0a4.5 4.5 0 006.364 0m-6.364 0l9 9"
+        />
+      </svg>
+      <span className="whitespace-pre-wrap font-medium">
+        Refills Text Number: 657-224-7232
+      </span>
+    </li>
+  </ul>
+</motion.div>
+
         </motion.section>
 
         {/* Row 2 */}
@@ -255,7 +302,7 @@ export default function BrochurePage() {
             </p>
           </motion.div>
 
-          {/* Visit Online */}
+          {/* Visit Online 
           <motion.div
             variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
             className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-2xl border border-primary-200 shadow-md flex flex-col items-center justify-center text-center"
@@ -270,7 +317,7 @@ export default function BrochurePage() {
               www.applespecialtypharmacy.com
             </a>
           </motion.div>
-
+*/}
           {/* QR */}
           <motion.div
             variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}

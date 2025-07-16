@@ -388,7 +388,7 @@ const PatientResourcesPage = () => {
     <div className="bg-yellow-50 border-l-4 border-yellow-400 text-yellow-700 p-4 mb-4 rounded">
       <p className="text-sm">
         <strong>Notice:</strong> Apple Specialty Pharmacy has no financial affiliation with
-         the organizations listed above. These links are provided for patient convenience only.
+          organizations listed below. These links are provided for patient convenience only.
       </p>
     </div>
     <ul className="space-y-2 text-primary-600">
