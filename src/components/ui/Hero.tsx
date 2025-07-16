@@ -1,13 +1,13 @@
-import { ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface HeroProps {
   title: string;
   subtitle?: string;
   children?: ReactNode;
   bgImage?: string;
-  textColor?: 'light' | 'dark';
-  height?: 'sm' | 'md' | 'lg' | 'full';
+  textColor?: "light" | "dark";
+  height?: "sm" | "md" | "lg" | "full";
   centered?: boolean;
   overlay?: boolean;
 }
@@ -17,49 +17,59 @@ export const Hero = ({
   subtitle,
   children,
   bgImage,
-  textColor = 'light',
-  height = 'md',
+  textColor = "light",
+  height = "md",
   centered = true,
   overlay = true,
 }: HeroProps) => {
   const heightClasses = {
-    sm: 'min-h-[300px] md:min-h-[400px]',
-    md: 'min-h-[400px] md:min-h-[500px]',
-    lg: 'min-h-[500px] md:min-h-[600px]',
-    full: 'min-h-screen',
+    sm: "min-h-[300px] md:min-h-[400px]",
+    md: "min-h-[400px] md:min-h-[500px]",
+    lg: "min-h-[500px] md:min-h-[600px]",
+    full: "min-h-screen",
   };
 
   const textClasses = {
-    light: 'text-white',
-    dark: 'text-gray-900',
+    light: "text-white",
+    dark: "text-gray-900",
   };
 
   const bgStyles = bgImage
-    ? { backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+    ? {
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }
     : {};
 
   return (
-    <div 
+    <section
       className={`relative ${heightClasses[height]} flex items-center`}
       style={bgStyles}
+      role="banner"
+      aria-label="Hero section"
     >
+      {/* overlay */}
       {bgImage && overlay && (
-        <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
+        <div
+          className="absolute inset-0 bg-gray-900 opacity-60"
+          aria-hidden="true"
+        ></div>
       )}
-      
+
       <div className="container-custom relative z-10">
-        <div className={`max-w-3xl ${centered ? 'mx-auto text-center' : ''}`}>
-          <motion.h1 
-            className={`${textClasses[textColor]} mb-4 font-bold`}
+        <div className={`max-w-3xl ${centered ? "mx-auto text-center" : ""}`}>
+          <motion.h1
+            className={`${textClasses[textColor]} mb-4 font-bold text-3xl md:text-5xl`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             {title}
           </motion.h1>
-          
+
           {subtitle && (
-            <motion.p 
+            <motion.p
               className={`${textClasses[textColor]} text-xl md:text-2xl mb-8`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -68,7 +78,7 @@ export const Hero = ({
               {subtitle}
             </motion.p>
           )}
-          
+
           {children && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -80,6 +90,6 @@ export const Hero = ({
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

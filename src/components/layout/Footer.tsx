@@ -1,20 +1,20 @@
-import { Link } from 'react-router-dom';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin 
-} from 'lucide-react';
-import logo from '../../assets/logo.svg';
-import { Fax } from '@mui/icons-material';
+import { Link } from "react-router-dom";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
+import logo from "/logo.png";
+import { Fax } from "@mui/icons-material";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container-custom pt-16 pb-8">
@@ -22,33 +22,52 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <img src='logo.png' alt="Apple Specialty Pharmacy" className="h-40  w-auto" />
+              <img
+                src={logo}
+                alt="Apple Specialty Pharmacy logo"
+                className="h-20 w-auto"
+              />
               <div className="ml-3">
-                <h3 className="text-white text-lg font-semibold"></h3>
-                <p className="text-gray-400 text-sm"></p>
+                <h3 className="text-white text-lg font-semibold">
+                  Apple Specialty Pharmacy
+                </h3>
+                <p className="text-gray-400 text-sm">Modern Care, Personalized Precision</p>
               </div>
             </div>
-            <p className="mb-4 text-gray-400">Modern Care • Personalized Precision</p>
-            {/*
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+            <p className="mb-4 text-gray-400 leading-relaxed">
+              Serving our community with care and precision since 20XX.
+            </p>
+
+            <div className="flex space-x-4 mt-4">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary-300 transition-colors min-w-[44px] min-h-[44px]"
+                aria-label="Facebook"
+              >
                 <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary-300 transition-colors min-w-[44px] min-h-[44px]"
+                aria-label="Twitter"
+              >
                 <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary-300 transition-colors min-w-[44px] min-h-[44px]"
+                aria-label="Instagram"
+              >
                 <Instagram size={20} />
-                <span className="sr-only">Instagram</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary-300 transition-colors min-w-[44px] min-h-[44px]"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
-                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
-            */}
           </div>
 
           {/* Quick Links */}
@@ -56,22 +75,52 @@ export const Footer = () => {
             <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link>
+                <Link
+                  to="/"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link>
+                <Link
+                  to="/about"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link>
+                <Link
+                  to="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Services
+                </Link>
               </li>
               <li>
-                <Link to="/prescriber-portal" className="text-gray-400 hover:text-white transition-colors">Prescriber Portal</Link>
+                <Link
+                  to="/prescriber-portal"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Prescriber Portal
+                </Link>
               </li>
               <li>
-                <Link to="/patient-resources" className="text-gray-400 hover:text-white transition-colors">Patient Resources</Link>
+                <Link
+                  to="/patient-resources"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Patient Resources
+                </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link>
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -81,19 +130,28 @@ export const Footer = () => {
             <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy-notice" className="text-gray-400 hover:text-white transition-colors">Privacy Notice</Link>
+                <Link
+                  to="/privacy-notice"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Privacy Notice
+                </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Use</Link>
+                <Link
+                  to="/terms"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Terms of Use
+                </Link>
               </li>
               <li>
-                <Link to="/non-discrimination" className="text-gray-400 hover:text-white transition-colors">Non-Discrimination</Link>
-              </li>
-              <li>
-                <span className="text-gray-400"></span>
-              </li>
-              <li>
-                <span className="text-gray-400"></span>
+                <Link
+                  to="/non-discrimination"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Non-Discrimination
+                </Link>
               </li>
             </ul>
           </div>
@@ -101,40 +159,38 @@ export const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm leading-relaxed">
               <li className="flex">
-                <MapPin className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                <span>1211 N. Broadway, Ste 300
-<br/>Santa Ana, CA 92701</span>
+                <MapPin className="h-5 w-5 text-primary-300 mt-0.5 mr-3 flex-shrink-0" />
+                <span>
+                  1211 N. Broadway, Ste 300
+                  <br />
+                  Santa Ana, CA 92701
+                </span>
               </li>
               <li className="flex">
-                <Phone className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
+                <Phone className="h-5 w-5 text-primary-300 mt-0.5 mr-3 flex-shrink-0" />
                 <span>323-999-APPL (2775)</span>
               </li>
               <li className="flex">
-                <Fax className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
+                <Fax className="h-5 w-5 text-primary-300 mt-0.5 mr-3 flex-shrink-0" />
                 <span>323-955-APPL (2775)</span>
               </li>
               <li className="flex">
-                <Clock className="h-5 w-5 text-primary-400 mt-0.5 mr-3 flex-shrink-0" />
-                <div>
-                  <p>Mon – Fri: 8:30 AM – 5:00 PM PST</p>
-                                 </div>
+                <Clock className="h-5 w-5 text-primary-300 mt-0.5 mr-3 flex-shrink-0" />
+                <span>
+                  Mon – Fri: 8:30 AM – 5:00 PM PST
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
         <hr className="border-gray-800 my-8" />
-        
+
         {/* Copyright */}
         <div className="text-center text-sm text-gray-500">
           <p>&copy; {year} Apple Specialty Pharmacy. All rights reserved.</p>
-          {/*
-          <p className="mt-2">
-            Website design is for demonstration purposes. All information is placeholder content.
-          </p>
-          */}
         </div>
       </div>
     </footer>
