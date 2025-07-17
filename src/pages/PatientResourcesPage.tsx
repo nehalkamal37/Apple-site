@@ -55,7 +55,7 @@ const PatientResourcesPage = () => {
             Helpful Resources
           </motion.h2>
           <motion.p 
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-700 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -74,11 +74,11 @@ const PatientResourcesPage = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="h-48 bg-primary-600 flex items-center justify-center">
-              <BookOpen className="h-16 w-16 text-white" />
+              <BookOpen className="h-16 w-16 text-white" aria-hidden="true"/>
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Educational Materials</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-700 mb-4">
                 Access detailed information about your condition and medications to better understand your treatment.
               </p>
                  <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
@@ -101,7 +101,7 @@ const PatientResourcesPage = () => {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Financial Assistance</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-700 mb-4">
                 Information on copay assistance programs, patient foundations, and manufacturer support programs.
               </p>
                 <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
@@ -124,7 +124,7 @@ const PatientResourcesPage = () => {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Forms & Documents</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-700 mb-4">
                 Download important forms for enrollment, consent, refills, and insurance documentation.
               </p>
                 <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
@@ -141,7 +141,7 @@ const PatientResourcesPage = () => {
       <Section bgColor="light">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Downloadable Resources</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Access and download helpful documents and guides
           </p>
         </div>
@@ -159,7 +159,7 @@ const PatientResourcesPage = () => {
             </div>
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">New Patient Enrollment Form</h3>
-              <p className="text-gray-600 text-sm mb-2">PDF document - 325 KB</p>
+              <p className="text-gray-700 text-sm mb-2">PDF document - 325 KB</p>
               <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
@@ -177,11 +177,11 @@ const PatientResourcesPage = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-              <Download className="h-6 w-6" />
+              <Download className="h-6 w-6" aria-hidden="true"/>
             </div>
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Medication Refill Request</h3>
-              <p className="text-gray-600 text-sm mb-2">PDF document - 215 KB</p>
+              <p className="text-gray-700 text-sm mb-2">PDF document - 215 KB</p>
    <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
@@ -198,11 +198,11 @@ const PatientResourcesPage = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-              <Download className="h-6 w-6" />
+              <Download className="h-6 w-6" aria-hidden="true"/>
             </div>
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Insurance Information Update</h3>
-              <p className="text-gray-600 text-sm mb-2">PDF document - 180 KB</p>
+              <p className="text-gray-700 text-sm mb-2">PDF document - 180 KB</p>
    <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
@@ -223,7 +223,7 @@ const PatientResourcesPage = () => {
             </div>
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Medication Guide & Instructions</h3>
-              <p className="text-gray-600 text-sm mb-2">PDF document - 450 KB</p>
+              <p className="text-gray-700 text-sm mb-2">PDF document - 450 KB</p>
    <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
@@ -244,7 +244,7 @@ const PatientResourcesPage = () => {
             </div>
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Financial Assistance Application</h3>
-              <p className="text-gray-600 text-sm mb-2">PDF document - 375 KB</p>
+              <p className="text-gray-700 text-sm mb-2">PDF document - 375 KB</p>
    <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
@@ -265,7 +265,7 @@ const PatientResourcesPage = () => {
             </div>
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Authorization for Release of Information</h3>
-              <p className="text-gray-600 text-sm mb-2">PDF document - 290 KB</p>
+              <p className="text-gray-700 text-sm mb-2">PDF document - 290 KB</p>
    <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
@@ -280,7 +280,7 @@ const PatientResourcesPage = () => {
       <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
             Find answers to common questions about our services
           </p>
         </div>
@@ -347,7 +347,7 @@ const PatientResourcesPage = () => {
       <Section bgColor="primary">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Patient Support & Resources</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
             Connect with organizations and communities that offer additional support
           </p>
         </div>
@@ -356,7 +356,7 @@ const PatientResourcesPage = () => {
 <Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
   <div>
     <h3 className="text-xl font-semibold mb-3">Condition-Specific Organizations</h3>
-    <p className="text-gray-600 mb-4">
+    <p className="text-gray-800 mb-4">
       Connect with national organizations that provide education, research, and support for specific conditions.
     </p>
     <ul className="space-y-2 text-primary-600">
@@ -382,7 +382,7 @@ const PatientResourcesPage = () => {
 <Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
   <div>
     <h3 className="text-xl font-semibold mb-3">Financial Resources</h3>
-    <p className="text-gray-600 mb-4">
+    <p className="text-gray-800 mb-4">
       Programs and foundations that may help with medication costs and financial assistance.
     </p>
     <div className="bg-yellow-50 border-l-4 border-yellow-400 text-yellow-700 p-4 mb-4 rounded">
@@ -414,7 +414,7 @@ const PatientResourcesPage = () => {
 <Card className="p-6 min-h-[460px] flex flex-col justify-between" animation>
   <div>
     <h3 className="text-xl font-semibold mb-3">Support Communities</h3>
-    <p className="text-gray-600 mb-4">
+    <p className="text-gray-800 mb-4">
       Connect with others who understand what you're going through and share experiences.
     </p>
     <ul className="space-y-2 text-primary-600">

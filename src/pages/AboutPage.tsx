@@ -98,7 +98,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="p-6 hover:shadow-lg transition-all duration-300" animation>
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
-              <Users className="h-6 w-6" />
+              <Users className="h-6 w-6" aria-hidden="true" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Patient-Centered Care</h3>
             <p className="text-gray-600">
@@ -108,7 +108,7 @@ const AboutPage = () => {
 
           <Card className="p-6 hover:shadow-lg transition-all duration-300" animation>
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
-              <Award className="h-6 w-6" />
+              <Award className="h-6 w-6" aria-hidden="true"/>
             </div>
             <h3 className="text-xl font-semibold mb-3">Excellence</h3>
             <p className="text-gray-600">
@@ -118,7 +118,7 @@ const AboutPage = () => {
 
           <Card className="p-6 hover:shadow-lg transition-all duration-300" animation>
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
-              <Clock className="h-6 w-6" />
+              <Clock className="h-6 w-6" aria-hidden="true"/>
             </div>
             <h3 className="text-xl font-semibold mb-3">Accessibility</h3>
             <p className="text-gray-600">
@@ -128,7 +128,7 @@ const AboutPage = () => {
 
           <Card className="p-6 hover:shadow-lg transition-all duration-300" animation>
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
-              <ShieldCheck className="h-6 w-6" />
+              <ShieldCheck className="h-6 w-6" aria-hidden="true"/>
             </div>
             <h3 className="text-xl font-semibold mb-3">Integrity</h3>
             <p className="text-gray-600">
@@ -138,7 +138,7 @@ const AboutPage = () => {
 
           <Card className="p-6 hover:shadow-lg transition-all duration-300" animation>
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
-              <BriefcaseMedical className="h-6 w-6" />
+              <BriefcaseMedical className="h-6 w-6" aria-hidden="true"/>
             </div>
             <h3 className="text-xl font-semibold mb-3">Expertise</h3>
             <p className="text-gray-600">
@@ -148,7 +148,7 @@ const AboutPage = () => {
 
           <Card className="p-6 hover:shadow-lg transition-all duration-300" animation>
             <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
-              <Building className="h-6 w-6" />
+              <Building className="h-6 w-6" aria-hidden="true"/>
             </div>
             <h3 className="text-xl font-semibold mb-3">Community</h3>
             <p className="text-gray-600">

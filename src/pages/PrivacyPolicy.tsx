@@ -118,8 +118,8 @@ const PrivacyPolicy: React.FC = () => {
 
               <SectionBlock id="get-copy" title="Get a Copy of This Notice" icon={ClipboardList} content={[
                 "You may download, print, or request a paper copy of this notice at any time.",
-                <a key="pdf" href="/files/Updated-ASP-Notice-of-Privacy-Practices-20250701.pdf" download className="text-primary-600 underline">Download PDF</a>,
-                <a key="docx" href="/files/Updated-ASP-Notice-of-Privacy-Practices-20250701.docx" download className="text-primary-600 underline">Download DOCX</a>
+                <a key="pdf" href="/files/Updated ASP Notice of Privacy Practices 20250701.pdf" download className="text-primary-600 underline">Download PDF</a>,
+                <a key="docx" href="/files/Updated ASP Notice of Privacy Practices 20250701.docx" download className="text-primary-600 underline">Download DOCX</a>
               ]} />
 
 

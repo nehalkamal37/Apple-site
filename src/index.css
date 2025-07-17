@@ -34,6 +34,33 @@
   p {
     @apply leading-relaxed;
   }
+
+  /* ada shitt  */
+  /* Before */
+.text-gray-600 {
+  color: #718096; /* contrast too low */
+}
+
+/* After */
+.text-gray-800 {
+  color: #2d3748; /* better contrast */
+}
+/* Before */
+.line-height-normal {
+  line-height: 1.2;
+}
+
+/* After */
+.line-height-relaxed {
+  line-height: 1.5;
+}
+/* Example: Darker text */
+.text-gray-900 {
+  color: #1a202c;
+}
+
+/* Or in Tailwind: */
+
 }
 
 @layer components {

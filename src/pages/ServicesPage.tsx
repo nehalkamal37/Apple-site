@@ -54,7 +54,7 @@ const ServicesPage = () => {
             Specialty Therapy Areas
           </motion.h2>
           <motion.p 
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-800 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -68,42 +68,42 @@ const ServicesPage = () => {
           <ServiceCard
             title="Dermatology"
             description="Specialized medications for psoriasis, eczema, and other complex skin conditions."
-            icon={<Microscope className="h-6 w-6" />}
+            icon={<Microscope className="h-6 w-6" aria-hidden="true"/>}
             href="/services/dermatology"
             delay={0.1}
           />
           <ServiceCard
             title="Rheumatology"
             description="Comprehensive therapy management for rheumatoid arthritis, lupus, and autoimmune disorders."
-            icon={<Stethoscope className="h-6 w-6" />}
+            icon={<Stethoscope className="h-6 w-6" aria-hidden="true"/>}
             href="/services/rheumatology"
             delay={0.2}
           />
           <ServiceCard
             title="Oncology"
             description="Supportive care medications and specialized therapies for cancer treatment."
-            icon={<HeartPulse className="h-6 w-6" />}
+            icon={<HeartPulse className="h-6 w-6" aria-hidden="true"/>}
             href="/services/oncology"
             delay={0.3}
           />
           <ServiceCard
             title="Neurology"
             description="Medications for multiple sclerosis, epilepsy, and other neurological conditions."
-            icon={<BrainCircuit className="h-6 w-6" />}
+            icon={<BrainCircuit className="h-6 w-6" aria-hidden="true"/>}
             href="/services/neurology"
             delay={0.4}
           />
           <ServiceCard
             title="Gastroenterology"
             description="Specialized therapies for Crohn's disease, ulcerative colitis, and GI disorders."
-            icon={<PillIcon className="h-6 w-6" />}
+            icon={<PillIcon className="h-6 w-6" aria-hidden="true"/>}
             href="/services/gastroenterology"
             delay={0.5}
           />
           <ServiceCard
             title="Infectious Disease"
             description="Medications for HIV/AIDS, hepatitis, and other infectious conditions."
-            icon={<Microscope className="h-6 w-6" />}
+            icon={<Microscope className="h-6 w-6" aria-hidden="true"/>}
             href="/services/infectious-disease"
             delay={0.6}
           />
@@ -126,42 +126,42 @@ const ServicesPage = () => {
             
             <div className="space-y-4">
               <div className="flex">
-                <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <div className="h-10 w-10 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                   <ClipboardList className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Personalized Care Plans</h3>
-                  <p className="text-gray-600">Customized medication management plans tailored to your specific needs and treatment goals.</p>
+                  <p className="text-gray-800">Customized medication management plans tailored to your specific needs and treatment goals.</p>
                 </div>
               </div>
               
               <div className="flex">
-                <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <div className="h-10 w-10 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                   <BadgeDollarSign className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Financial Assistance</h3>
-                  <p className="text-gray-600">Help navigating insurance coverage, copay assistance programs, and manufacturer patient support.</p>
+                  <p className="text-gray-800">Help navigating insurance coverage, copay assistance programs, and manufacturer patient support.</p>
                 </div>
               </div>
               
               <div className="flex">
-                <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <div className="h-10 w-10 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                   <ListChecks className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Medication Education</h3>
-                  <p className="text-gray-600">Comprehensive education on your medications, potential side effects, and administration techniques.</p>
+                  <p className="text-gray-800">Comprehensive education on your medications, potential side effects, and administration techniques.</p>
                 </div>
               </div>
               
               <div className="flex">
-                <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <div className="h-10 w-10 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                   <Truck className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Free Delivery</h3>
-                  <p className="text-gray-600">Convenient home delivery of your medications with temperature-controlled packaging when required.</p>
+                  <p className="text-gray-800">Convenient home delivery of your medications with temperature-controlled packaging when required.</p>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@ const ServicesPage = () => {
       <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Prescriber Services</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
             Supporting healthcare providers with efficient, integrated pharmacy solutions
           </p>
         </div>
@@ -199,7 +199,7 @@ const ServicesPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
+            <div className="h-12 w-12 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
@@ -209,27 +209,27 @@ const ServicesPage = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3">Digital Referral System</h3>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-gray-800">
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Secure electronic referral submission</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Real-time status updates on patient prescriptions</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Electronic prior authorization assistance</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Integration with major EMR systems</span>
@@ -244,34 +244,34 @@ const ServicesPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="h-12 w-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mb-4">
+            <div className="h-12 w-12 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3">Clinical Support</h3>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-gray-800">
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Direct access to clinical pharmacists</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Medication therapy management</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Drug interaction reviews</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-5 w-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-5 w-5 text-primary-800 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Patient adherence monitoring and reporting</span>
@@ -285,7 +285,7 @@ const ServicesPage = () => {
       <Section bgColor="light">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Process</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
             A seamless experience from prescription to delivery
           </p>
         </div>
@@ -306,13 +306,13 @@ const ServicesPage = () => {
               <div className="md:text-right mb-8 md:mb-0">
                 <div className="bg-white rounded-xl shadow-card p-6 inline-block">
                   <h3 className="text-xl font-semibold text-primary-700 mb-2">1. Referral</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800">
                     We receive a prescription or referral from your healthcare provider through our secure electronic system or traditional methods.
                   </p>
                 </div>
               </div>
               <div className="hidden md:flex justify-center">
-                <div className="h-12 w-12 bg-primary-600 text-white rounded-full flex items-center justify-center z-10">
+                <div className="h-12 w-12 bg-primary-800 text-white rounded-full flex items-center justify-center z-10">
                   <span className="font-bold">1</span>
                 </div>
               </div>
@@ -327,14 +327,14 @@ const ServicesPage = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="hidden md:flex justify-center order-1">
-                <div className="h-12 w-12 bg-primary-600 text-white rounded-full flex items-center justify-center z-10">
+                <div className="h-12 w-12 bg-primary-800 text-white rounded-full flex items-center justify-center z-10">
                   <span className="font-bold">2</span>
                 </div>
               </div>
               <div className="mb-8 md:mb-0 md:order-2">
                 <div className="bg-white rounded-xl shadow-card p-6 inline-block">
                   <h3 className="text-xl font-semibold text-primary-700 mb-2">2. Intake & Insurance Verification</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800">
                     Our team contacts you to complete the intake process and works with your insurance to verify coverage and determine any out-of-pocket costs.
                   </p>
                 </div>
@@ -352,13 +352,13 @@ const ServicesPage = () => {
               <div className="md:text-right mb-8 md:mb-0">
                 <div className="bg-white rounded-xl shadow-card p-6 inline-block">
                   <h3 className="text-xl font-semibold text-primary-700 mb-2">3. Clinical Assessment</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800">
                     A clinical pharmacist reviews your medication profile and conducts an initial consultation to develop your personalized care plan.
                   </p>
                 </div>
               </div>
               <div className="hidden md:flex justify-center">
-                <div className="h-12 w-12 bg-primary-600 text-white rounded-full flex items-center justify-center z-10">
+                <div className="h-12 w-12 bg-primary-800 text-white rounded-full flex items-center justify-center z-10">
                   <span className="font-bold">3</span>
                 </div>
               </div>
@@ -373,14 +373,14 @@ const ServicesPage = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="hidden md:flex justify-center order-1">
-                <div className="h-12 w-12 bg-primary-600 text-white rounded-full flex items-center justify-center z-10">
+                <div className="h-12 w-12 bg-primary-800 text-white rounded-full flex items-center justify-center z-10">
                   <span className="font-bold">4</span>
                 </div>
               </div>
               <div className="mb-8 md:mb-0 md:order-2">
                 <div className="bg-white rounded-xl shadow-card p-6 inline-block">
                   <h3 className="text-xl font-semibold text-primary-700 mb-2">4. Medication Delivery</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800">
                     Your medications are prepared and delivered to your home, with any necessary supplies and educational materials included.
                   </p>
                 </div>
@@ -398,13 +398,13 @@ const ServicesPage = () => {
               <div className="md:text-right">
                 <div className="bg-white rounded-xl shadow-card p-6 inline-block">
                   <h3 className="text-xl font-semibold text-primary-700 mb-2">5. Ongoing Support</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800">
                     Our care team follows up regularly to monitor your progress, address any concerns, and coordinate refills to ensure uninterrupted therapy.
                   </p>
                 </div>
               </div>
               <div className="hidden md:flex justify-center">
-                <div className="h-12 w-12 bg-primary-600 text-white rounded-full flex items-center justify-center z-10">
+                <div className="h-12 w-12 bg-primary-800 text-white rounded-full flex items-center justify-center z-10">
                   <span className="font-bold">5</span>
                 </div>
               </div>

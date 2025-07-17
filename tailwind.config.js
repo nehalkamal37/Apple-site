@@ -3,7 +3,31 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: {
+     colors: {
+
+      primary: {
+  500: '#2a9d89',   // keep as brand
+  600: '#1e8a78',
+  700: '#166e60',   // ✅ recommended for buttons
+  800: '#105249',
+  900: '#0a3631',
+},
+secondary: {
+  500: '#f59e0b',
+  600: '#d97706',
+  700: '#b45309',   // ✅ recommended for buttons
+  800: '#92400e',
+  900: '#78350f',
+},
+accent: {
+  500: '#8b5cf6',
+  600: '#7c3aed',
+  700: '#6d28d9',   // ✅ recommended for buttons
+  800: '#5b21b6',
+  900: '#4c1d95',
+},
+
+      /*
         primary: {
           50: '#f0f9f6',
           100: '#d0ece3',
@@ -28,6 +52,7 @@ export default {
           800: '#92400e',
           900: '#78350f',
         },
+        
         accent: {
           50: '#f5f3ff',
           100: '#ede9fe',
@@ -40,6 +65,7 @@ export default {
           800: '#5b21b6',
           900: '#4c1d95',
         },
+        */
         success: {
           50: '#ecfdf5',
           100: '#d1fae5',

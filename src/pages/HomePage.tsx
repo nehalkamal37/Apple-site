@@ -68,8 +68,10 @@ export default function BrochurePage() {
     <>
       {/* Hero */}
       <Hero
-  title="MODERN CARE"
-  subtitle="PERSONALIZED PRECISION"
+                title={<h1 className="text-4xl md:text-5xl font-bold text-white">MODERN CARE</h1>}
+          subtitle={<span className="text-xl md:text-2xl text-primary-200">PERSONALIZED PRECISION</span>}
+
+  //subtitle="PERSONALIZED PRECISION"
   bgImage="/images/hero.png"
   height="lg"
 >
@@ -123,7 +125,7 @@ export default function BrochurePage() {
               {experienceItems.map(({ Icon, text }, i) => (
                 <li key={i} className="flex items-start">
                   <span className="flex items-center justify-center w-11 h-11 bg-primary-100 rounded-full mr-4">
-                    <Icon className="h-5 w-5 text-primary-700" />
+                    <Icon className=" h-5 w-5 text-primary-700" aria-hidden="true" />
                   </span>
                   <span className="text-gray-900 leading-relaxed">{text}</span>
                 </li>
@@ -147,7 +149,7 @@ export default function BrochurePage() {
                 {stayConnectedItems.map(({ Icon, text }, i) => (
                   <li key={i} className="flex items-start">
                     <span className="flex items-center justify-center w-10 h-10 bg-white rounded-full mr-3">
-                      <Icon className="h-4 w-4 text-primary-700" />
+                      <Icon className="h-4 w-4 text-primary-700" aria-hidden="true" />
                     </span>
                     <span>{text}</span>
                   </li>
@@ -202,7 +204,7 @@ export default function BrochurePage() {
         key={i}
         className="flex items-center bg-primary-50 rounded-full px-4 py-2 hover:shadow-md transition-shadow min-h-[44px]"
       >
-        <Icon className="h-5 w-5 text-primary-700 mr-3" />
+        <Icon className="h-5 w-5 text-primary-700 mr-3" aria-hidden="true"/>
         <span className="whitespace-pre-wrap font-medium">{text}</span>
       </li>
     ))}

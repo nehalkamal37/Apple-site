@@ -45,7 +45,7 @@ const PrescriberPortalPage = () => {
             <ul className="space-y-6 mb-8">
               <li className="flex">
                 <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Database className="h-5 w-5" />
+                  <Database className="h-5 w-5" aria-hidden="true"/>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Electronic Referrals</h3>
@@ -55,7 +55,7 @@ const PrescriberPortalPage = () => {
               
               <li className="flex">
                 <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Clock className="h-5 w-5" />
+                  <Clock className="h-5 w-5" aria-hidden="true"/>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Real-Time Updates</h3>
@@ -65,7 +65,7 @@ const PrescriberPortalPage = () => {
               
               <li className="flex">
                 <div className="h-10 w-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Shield className="h-5 w-5" />
+                  <Shield className="h-5 w-5" aria-hidden="true"/>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Secure Communication</h3>
