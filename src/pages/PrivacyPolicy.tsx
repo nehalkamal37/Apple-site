@@ -144,13 +144,13 @@ const PrivacyPolicy: React.FC = () => {
 
                 <ul className="ml-6 space-y-3 text-gray-700 list-disc">
                   <li>
-                    <span role="img" aria-label="email">📧</span> Email: <a href="mailto:privacy@applespecialtypharmacy.com" className="text-primary-600 underline">privacy@applespecialtypharmacy.com</a>
+                    <span role="img" aria-label="email"></span> Email: <a href="mailto:privacy@applespecialtypharmacy.com" className="text-primary-600 underline">privacy@applespecialtypharmacy.com</a>
                   </li>
                   <li>
-                    <span role="img" aria-label="phone">📞</span> Phone: <a href="tel:3239992775" className="text-primary-600 underline">323-999-2775</a>
+                    <span role="img" aria-label="phone"></span> Phone: <a href="tel:3239992775" className="text-primary-600 underline">323-999-2775</a>
                   </li>
                   <li>
-                    <span role="img" aria-label="mail">✉️</span> Mail: Apple Specialty Pharmacy, 1211 N. Broadway, Ste 300, Santa Ana, CA 92701
+                    <span role="img" aria-label="mail"></span> Mail: Apple Specialty Pharmacy, 1211 N. Broadway, Ste 300, Santa Ana, CA 92701
                   </li>
                 </ul>
               </section>
