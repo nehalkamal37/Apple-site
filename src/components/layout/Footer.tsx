@@ -25,7 +25,7 @@ export const Footer = () => {
               <img
                 src={logo}
                 alt="Apple Specialty Pharmacy logo"
-                className="h-20 w-auto"
+                className="h-33 w-44"
               />
               <div className="ml-3">
                 <h3 className="text-white text-lg font-semibold">
@@ -35,7 +35,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="mb-4 text-gray-400 leading-relaxed">
-              Serving our community with care and precision since 20XX.
+              Serving our community with care and precision.
             </p>
 
             <div className="flex space-x-4 mt-4">
