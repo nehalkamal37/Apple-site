@@ -38,6 +38,8 @@ const stayConnectedItems = [
 const getStartedItems = [
   { Icon: Phone, text: '323-999-APPL (2775)' },
   { Icon: Printer, text: '323-955-APPL (2775)' },
+    { Icon: Pill, text: "Refills Text Number: 657-224-7232" }, // added refill here
+  
   {
     Icon: Car,
     text: '1211 N. Broadway, Ste 300\nSanta Ana, CA 92701',
@@ -217,54 +219,43 @@ export default function BrochurePage() {
           
         </motion.section>
 
-        <motion.section
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1 } } }}
-        >
-          <motion.div
-            variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
-            className="bg-gradient-to-br from-teal-100 to-white p-6 rounded-2xl border border-teal-200 shadow-md"
-          >
-            <h3 className="text-2xl font-bold text-teal-800 mb-3">Horario de atención</h3>
-            <p className="text-teal-900">Lun – Vie: 8:30 AM – 5:00 PM PST</p>
-            <p className="text-teal-700 mt-2 text-sm leading-relaxed">
-              Soporte clínico disponible entre semana, fines de semana y días festivos.
-            </p>
-          </motion.div>
+<motion.section
+  className="grid grid-cols-1 gap-8 mt-8"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1 } } }}
+>
+  <motion.div
+    variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+    className="bg-gradient-to-br from-teal-100 to-white p-6 rounded-2xl border border-teal-200 shadow-md"
+  >
+    <h3 className="text-2xl font-bold text-teal-800 mb-3">Horario de atención</h3>
+    <p className="text-teal-900">Lun – Vie: 8:30 AM – 5:00 PM PST</p>
+    <p className="text-teal-700 mt-2 text-sm leading-relaxed">
+      Soporte clínico disponible entre semana, fines de semana y días festivos.
+    </p>
+  </motion.div>
 
-          <motion.div
-            variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
-            className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-2xl border border-primary-200 shadow-md flex flex-col items-center justify-center text-center"
-          >
-            <h3 className="text-2xl font-bold text-primary-800 mb-3">Visítanos en línea</h3>
-            <a
-              href="https://www.applespecialtypharmacy.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-600 text-lg font-medium underline hover:text-primary-800 transition"
-            >
-              www.applespecialtypharmacy.com
-            </a>
-          </motion.div>
+  <motion.div
+    variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
+    className="bg-gradient-to-br from-teal-50 to-white p-6 rounded-2xl border border-teal-200 shadow-md text-center"
+  >
+    <h3 className="text-2xl font-bold text-teal-800 mb-2">Descarga nuestra app</h3>
+    <p className="text-teal-700 mb-4 text-sm leading-relaxed">
+      Escanea el código QR a continuación usando tu dispositivo móvil.
+    </p>
+    <img
+      src="/images/qr.jpg"
+      alt="Código QR para descargar la aplicación de la farmacia"
+      className="w-32 h-32 mx-auto rounded-md shadow"
+    />
+  </motion.div>
+</motion.section>
 
-          <motion.div
-            variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
-            className="bg-gradient-to-br from-teal-50 to-white p-6 rounded-2xl border border-teal-200 shadow-md text-center"
-          >
-            <h3 className="text-2xl font-bold text-teal-800 mb-2">Descarga nuestra app</h3>
-            <p className="text-teal-700 mb-4 text-sm leading-relaxed">
-              Escanea el código QR a continuación usando tu dispositivo móvil.
-            </p>
-            <img
-              src="/images/qr.jpg"
-              alt="Código QR para descargar la aplicación de la farmacia"
-              className="w-32 h-32 mx-auto rounded-md shadow"
-            />
-          </motion.div>
-        </motion.section>
+
+
+
       </motion.main>
     </>
   )
