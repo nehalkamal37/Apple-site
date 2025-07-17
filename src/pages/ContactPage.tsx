@@ -292,7 +292,7 @@ const ContactPage = () => {
         Direct access to our expert teams
       </p>
     </motion.div>
-
+{/*
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -323,7 +323,7 @@ const ContactPage = () => {
 </div>
 
 
-        {/* Combined Contact Info */}
+         Combined Contact Info 
         <div className="flex flex-wrap justify-center items-center gap-4 mt-6">
           <div className="flex items-center gap-2 bg-primary-50 px-4 py-2 rounded-full shadow">
             <Phone className="h-5 w-5 text-primary-700" />
@@ -344,6 +344,67 @@ const ContactPage = () => {
         </div>
       </div>
     </motion.div>
+*/}
+
+
+    <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5 }}
+  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+>
+  <div className="bg-gradient-to-r from-blue-500 to-emerald-500 h-2" />
+  <div className="p-6">
+    {/* Departments */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+      {[
+        { icon: <HeartPulse className="h-6 w-6" />, title: 'Patient Care' },
+        { icon: <FileText className="h-6 w-6" />, title: 'Prescriptions' },
+        { icon: <CreditCard className="h-6 w-6" />, title: 'Billing' },
+        { icon: <Users className="h-6 w-6" />, title: 'Providers' },
+        { icon: <MapPin className="h-6 w-6" />, title: 'Facility Tours' },
+        { icon: <MessageCircle className="h-6 w-6" />, title: 'Clinical' },
+        { icon: <Mail className="h-6 w-6" />, title: 'General Inquiries' },
+      ].map((dept, idx) => (
+        <div
+          key={idx}
+          className="flex flex-col items-center bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition"
+        >
+          <div className="bg-primary-100 p-3 rounded-lg text-primary-700 mb-2">
+            {dept.icon}
+          </div>
+          <h3 className="text-sm font-medium text-gray-800 text-center">{dept.title}</h3>
+        </div>
+      ))}
+    </div>
+
+    {/* Combined Contact Info */}
+    <div className="flex flex-wrap justify-center items-center gap-4 mt-6">
+      <div className="flex items-center gap-2 bg-primary-50 px-4 py-2 rounded-full shadow">
+        <Phone className="h-5 w-5 text-primary-700" />
+        <span className="font-medium text-primary-900">
+          Phone: 323-999-APPL (2775)
+        </span>
+      </div>
+
+      <div className="flex items-center gap-2 bg-primary-50 px-4 py-2 rounded-full shadow">
+        <PhoneOutgoing className="h-5 w-5 text-primary-700" />
+        <span className="font-medium text-primary-900">
+          Fax: 323-955-APPL (2775)
+        </span>
+      </div>
+
+      <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full shadow">
+        <Mail className="h-5 w-5 text-blue-700" />
+        <span className="font-medium text-blue-900 break-all">
+          Requests@applespecilatypharmacy.com
+        </span>
+      </div>
+    </div>
+  </div>
+</motion.div>
+
   </div>
 </Section>
 
