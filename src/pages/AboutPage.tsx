@@ -9,8 +9,9 @@ const AboutPage = () => {
   return (
     <>
       <Hero
-        title="About Apple Specialty Pharmacy"
-        subtitle="Delivering specialized care and personalized medication management since 2005"
+      
+          title={<h1 className="text-4xl md:text-5xl font-bold text-white">About Apple Specialty Pharmacy</h1>}
+          subtitle={<span className="text-xl md:text-2xl text-primary-200">Delivering specialized care and personalized medication management since 2005</span>}
         bgImage="https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg"
       >
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
