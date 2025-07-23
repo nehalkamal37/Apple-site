@@ -6,7 +6,7 @@ const PrivacyNoticePage = () => {
   return (
     <>
       <Hero
-        title="Privacy Notice o"
+        title="Privacy Notice "
         subtitle="How we protect and use your health information"
         bgImage="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg"
       />

@@ -32,12 +32,14 @@ export const ServiceCard = ({
         </div>
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
+        {/*
         <Link 
           to={href} 
           className="inline-flex items-center text-primary-600 hover:text-primary-800 font-medium"
         >
           Learn more <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
+        */}
       </div>
     </motion.div>
   );

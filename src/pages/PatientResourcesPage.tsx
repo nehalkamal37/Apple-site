@@ -81,9 +81,7 @@ const PatientResourcesPage = () => {
               <p className="text-gray-700 mb-4">
                 Access detailed information about your condition and medications to better understand your treatment.
               </p>
-                 <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
-                  Browse Library
-</Button>
+           
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -104,9 +102,7 @@ const PatientResourcesPage = () => {
               <p className="text-gray-700 mb-4">
                 Information on copay assistance programs, patient foundations, and manufacturer support programs.
               </p>
-                <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
-                  Explore Options
-</Button>
+          
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -127,9 +123,10 @@ const PatientResourcesPage = () => {
               <p className="text-gray-700 mb-4">
                 Download important forms for enrollment, consent, refills, and insurance documentation.
               </p>
-                <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
+               {/* <Button variant="primary" size="md" onClick={() => setModalOpen(true)}>
                  View Forms
 </Button>
+*/}
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -160,10 +157,11 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">New Patient Enrollment Form</h3>
               <p className="text-gray-700 text-sm mb-2">PDF document - 325 KB</p>
+              {/*
               <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
-
+*/}
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
             </div>
@@ -182,9 +180,7 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Medication Refill Request</h3>
               <p className="text-gray-700 text-sm mb-2">PDF document - 215 KB</p>
-   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
-                  Download
-</Button>
+   
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -203,9 +199,7 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Insurance Information Update</h3>
               <p className="text-gray-700 text-sm mb-2">PDF document - 180 KB</p>
-   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
-                  Download
-</Button>
+  
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -224,9 +218,7 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Medication Guide & Instructions</h3>
               <p className="text-gray-700 text-sm mb-2">PDF document - 450 KB</p>
-   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
-                  Download
-</Button>
+ 
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -245,9 +237,7 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Financial Assistance Application</h3>
               <p className="text-gray-700 text-sm mb-2">PDF document - 375 KB</p>
-   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
-                  Download
-</Button>
+   
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -266,9 +256,7 @@ const PatientResourcesPage = () => {
             <div className="flex-grow">
               <h3 className="text-lg font-medium mb-1">Authorization for Release of Information</h3>
               <p className="text-gray-700 text-sm mb-2">PDF document - 290 KB</p>
-   <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
-                  Download
-</Button>
+  
 
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
             </div>
@@ -392,11 +380,7 @@ const PatientResourcesPage = () => {
       </p>
     </div>
     <ul className="space-y-2 text-primary-600">
-  <li><a href="https://www.patientadvocate.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Patient Advocate Foundation</a></li>
-  <li><a href="https://www.needymeds.org" target="_blank" rel="noopener noreferrer" className="hover:underline">NeedyMeds</a></li>
   <li><a href="https://www.goodrx.com" target="_blank" rel="noopener noreferrer" className="hover:underline">GoodRx</a></li>
-  <li><a href="https://www.panfoundation.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Patient Access Network Foundation</a></li>
-  <li><a href="https://www.pparx.org" target="_blank" rel="noopener noreferrer" className="hover:underline">Partnership for Prescription Assistance</a></li>
 </ul>
 
  
