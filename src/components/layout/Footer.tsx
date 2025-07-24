@@ -37,7 +37,7 @@ export const Footer = () => {
             <p className="mb-4 text-gray-400 leading-relaxed">
               Serving our community with care and precision.
             </p>
-
+{/*
             <div className="flex space-x-4 mt-4">
               <a
                 href="#"
@@ -68,6 +68,7 @@ export const Footer = () => {
                 <Linkedin size={20} />
               </a>
             </div>
+            */}
           </div>
 
           {/* Quick Links */}
