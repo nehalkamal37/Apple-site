@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   MapPin,
   Phone,
@@ -14,6 +14,7 @@ import { Fax } from "@mui/icons-material";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
+const location = useLocation();
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -22,11 +23,15 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <img
-                src={logo}
-                alt="Apple Specialty Pharmacy logo"
-                className="h-33 w-44"
-              />
+              <Link to={location.pathname.startsWith('/es') ? '/es' : '/'}>
+  <img
+    src={logo}
+    alt="Apple Specialty Pharmacy logo"
+    className="h-33 w-50"
+  />
+</Link>
+
+           
               <div className="ml-3">
                 <h3 className="text-white text-lg font-semibold">
                   Apple Specialty Pharmacy

@@ -49,7 +49,9 @@ export const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to={location.pathname.startsWith('/es') ? '/es' : '/'} className="flex items-center">
+
+         {/* <Link to="/" className="flex items-center"> */}
           {/* <img src="logo.png" alt="Apple Specialty Pharmacy" className="h-12 w-auto " /> */}
 <img
   src="logo.png"

@@ -412,7 +412,7 @@ src='/images/contact.png'
       <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full shadow">
         <Mail className="h-5 w-5 text-blue-700" />
         <span className="font-medium text-blue-900 break-all">
-          Requests@applespecilatypharmacy.com
+          requests@applespecilatypharmacy.com
         </span>
       </div>
     </div>

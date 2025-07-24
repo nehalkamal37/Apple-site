@@ -22,8 +22,8 @@ import { Hero } from "../components/ui/Hero";
 
 const experienceItems = [
   { Icon: Heart, text: "Care That Puts You First" },
-  { Icon: BookOpen, text: "Free Delivery to Your Door" },
-  { Icon: Truck, text: "Answers That Make Sense" },
+  { Icon: Truck, text: "Free Delivery to Your Door" },
+  { Icon: BookOpen, text: "Answers That Make Sense" },
   { Icon: DollarSign, text: "Help With Costs and Coverage" },
   { Icon: Users, text: "Your Health Team, Working Together" },
 ];
@@ -78,6 +78,7 @@ export default function BrochurePage() {
   bgImage="/images/hero.png"
   height="lg"
 >
+  {/*
   <div className="flex flex-col sm:flex-row gap-4 justify-center">
     <a
       href="/contact"
@@ -85,7 +86,7 @@ export default function BrochurePage() {
     >
       Contact Us
     </a>
-{/*
+
     <a
 
       href="https://patient.rxlocal.com"
@@ -95,9 +96,11 @@ export default function BrochurePage() {
     >
       Patient Portal
     </a>
-    */}
+    
 
   </div>
+  */}
+  
 </Hero>
 
 

@@ -22,8 +22,8 @@ import { Hero } from '../components/ui/Hero'
 
 const experienceItems = [
   { Icon: Heart, text: 'Atención que te pone primero' },
-  { Icon: BookOpen, text: 'Entrega gratuita a tu puerta' },
-  { Icon: Truck, text: 'Respuestas que tienen sentido' },
+  { Icon: Truck, text: 'Entrega gratuita a tu puerta' },
+  { Icon: BookOpen, text: 'Respuestas que tienen sentido' },
   { Icon: DollarSign, text: 'Ayuda con los costos y la cobertura' },
   { Icon: Users, text: 'Tu equipo de salud, trabajando juntos' },
 ]
@@ -78,12 +78,7 @@ export default function BrochurePage() {
         height="lg"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-md bg-primary-600 px-6 py-3 text-lg font-semibold text-white shadow hover:bg-primary-700 transition"
-              >
-                 Contáctanos 
-              </a>
+        
 
               {/*
           <Button variant="primary" size="lg">

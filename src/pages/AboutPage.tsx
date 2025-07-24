@@ -237,82 +237,8 @@ const AboutPage = () => {
         </div>
       </Section>
 */}
-      {/* Leadership Team 
 
-      <Section bgColor="primary">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet the experienced professionals who guide our mission
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <motion.div 
-            className="bg-white rounded-xl shadow-card overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <img 
-              src="https://images.pexels.com/photos/5327584/pexels-photo-5327584.jpeg" 
-              alt="Dr. Emily Chen" 
-              className="w-full h-64 object-cover" 
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Dr. Emily Chen</h3>
-              <p className="text-primary-600 mb-3">Founder & Chief Pharmacist</p>
-              <p className="text-gray-600">
-                Dr. Chen brings over 20 years of experience in specialty pharmacy practice and a passion for patient-centered care.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="bg-white rounded-xl shadow-card overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <img 
-              src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" 
-              alt="Dr. Michael Rodriguez" 
-              className="w-full h-64 object-cover" 
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Dr. Michael Rodriguez</h3>
-              <p className="text-primary-600 mb-3">Clinical Director</p>
-              <p className="text-gray-600">
-                Dr. Rodriguez oversees our clinical programs and therapy management protocols to ensure optimal patient outcomes.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="bg-white rounded-xl shadow-card overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <img 
-              src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg" 
-              alt="Sarah Johnson" 
-              className="w-full h-64 object-cover" 
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Sarah Johnson</h3>
-              <p className="text-primary-600 mb-3">Patient Care Director</p>
-              <p className="text-gray-600">
-                Sarah leads our patient support team, ensuring seamless coordination of care and exceptional service delivery.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </Section>
-*/}
+     
 
     </>
   );

@@ -6,7 +6,6 @@ import ServicesPage from './pages/ServicesPage';
 import PrescriberPortalPage from './pages/PrescriberPortalPage';
 import PatientResourcesPage from './pages/PatientResourcesPage';
 import ContactPage from './pages/ContactPage';
-import PrivacyNoticePage from './pages/PrivacyNoticePage';
 import NotFoundPage from './pages/NotFoundPage';
 import BrochurePage from './pages/HomePage';
 import EsBrochurePage from './pages/esHome';
@@ -15,9 +14,13 @@ import TriFoldPage from './pages/TriFoldPage';
 import BrochureInside from './pages/BrochureInside';
 import PatientPostcardPage from './pages/PatientPostcardPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
+      
+      <ScrollToTop />
+
       <Layout>
         <Routes>
           
@@ -32,7 +35,6 @@ function App() {
           <Route path="/prescriber-portal" element={<PrescriberPortalPage />} />
           <Route path="/patient-resources" element={<PatientResourcesPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/privacy-notice" element={<PrivacyNoticePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
