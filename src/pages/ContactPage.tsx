@@ -9,7 +9,7 @@ const ContactPage = () => {
       
       <div className="relative h-screen max-h-[600px] overflow-hidden">
                 <img
-src="https://sdmntprukwest.oaiusercontent.com/files/00000000-1530-6243-9692-72b94f6b50cc/raw?se=2025-07-24T17%3A19%3A37Z&sp=r&sv=2024-08-04&sr=b&scid=3ac00f0c-7e9b-5066-a06b-0309722964d1&skoid=8e0fb8a9-6beb-4b32-9eda-253f61890767&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T20%3A09%3A02Z&ske=2025-07-24T20%3A09%3A02Z&sks=b&skv=2024-08-04&sig=20vrxrr1H9rKOOKua6e45rDr7e8xZdqDzWfZwezsoXU%3D"
+src='/images/contact.png'
 //  src="https://images.pexels.com/photos/6098034/pexels-photo-6098034.jpeg"
           alt="Contact Hero"
           className="absolute inset-0 w-full h-full object-cover"
