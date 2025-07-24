@@ -85,8 +85,9 @@ export default function BrochurePage() {
     >
       Contact Us
     </a>
-
+{/*
     <a
+
       href="https://patient.rxlocal.com"
       target="_blank"
       rel="noopener noreferrer"
@@ -94,6 +95,8 @@ export default function BrochurePage() {
     >
       Patient Portal
     </a>
+    */}
+    
   </div>
 </Hero>
 

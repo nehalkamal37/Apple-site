@@ -91,11 +91,12 @@ export default function BrochurePage() {
           <Button variant="primary" size="lg">
             <a href="/contact" target="_blank">Contáctanos</a>
           </Button>
-              */}
+              
               
           <Button variant="secondary" size="lg">
             <a href="https://patient.rxlocal.com" target="_blank">Portal del Paciente</a>
           </Button>
+          */}
         </div>
       </Hero>
 

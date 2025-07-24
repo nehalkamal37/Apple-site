@@ -134,7 +134,7 @@ const PatientResourcesPage = () => {
         </div>
       </Section>
 
-      {/* Downloadable Resources */}
+      {/* Downloadable Resources 
       <Section bgColor="light">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Downloadable Resources</h2>
@@ -161,7 +161,7 @@ const PatientResourcesPage = () => {
               <Button variant="text" size="sm" onClick={() => setModalOpen(true)}>
                   Download
 </Button>
-*/}
+
 <DownloadNoticeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
             </div>
@@ -263,7 +263,7 @@ const PatientResourcesPage = () => {
           </motion.div>
         </div>
       </Section>
-
+*/}
       {/* FAQs */}
       <Section>
         <div className="text-center mb-12">
@@ -317,7 +317,7 @@ const PatientResourcesPage = () => {
               Contact Our Support Team
             </Button>
 */}
-            <a href="tel:13239992775">
+            <a href="/contact">
   <Button
     variant="primary"
     icon={<Phone className="h-4 w-4" />}

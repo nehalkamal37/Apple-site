@@ -14,10 +14,9 @@ const PrescriberPortalPage = () => {
         subtitle="Secure access to patient information and referral management"
         bgImage="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg"
       />
-
+{/*
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Login Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +29,6 @@ const PrescriberPortalPage = () => {
             </Card>
           </motion.div>
 
-          {/* Portal Info */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -84,11 +82,10 @@ const PrescriberPortalPage = () => {
               </li>
             </ul>
             
-            <Button variant="primary">Request Portal Access</Button>
           </motion.div>
         </div>
       </Section>
-
+*/}
       {/* Portal Features */}
       <Section bgColor="light">
         <div className="text-center mb-12">
@@ -142,7 +139,8 @@ const PrescriberPortalPage = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <img 
-              src="https://images.pexels.com/photos/4031409/pexels-photo-4031409.jpeg" 
+               src="/images/patient.webp"
+              // src="https://images.pexels.com/photos/4031409/pexels-photo-4031409.jpeg" 
               alt="Patient Management" 
               className="w-full h-48 object-cover rounded-lg mb-4" 
             />
@@ -233,7 +231,9 @@ const PrescriberPortalPage = () => {
                   <span className="font-bold">1</span>
                 </div>
                 <div className="pt-1">
+                  {/*
                   <h3 className="text-xl font-semibold text-primary-700 mb-2">Request Access</h3>
+                */}
                   <p className="text-gray-600">
                     Complete the online access request form or contact our prescriber relations team directly at (123) 456-7890.
                   </p>
@@ -298,10 +298,11 @@ const PrescriberPortalPage = () => {
               </motion.div>
             </div>
           </div>
-          
+          {/*
           <div className="mt-12 text-center">
             <Button variant="primary" size="lg">Request Portal Access Today</Button>
           </div>
+          */}
         </div>
       </Section>
     </>

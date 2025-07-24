@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, MessageCircle, Users, CreditCard, FileText, HeartPulse, Contact, PhoneOutgoing } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Users, CreditCard, FileText, HeartPulse, Contact, PhoneOutgoing, Link } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ContactForm  from '../components/ui/ContactForm';
 
@@ -9,7 +9,8 @@ const ContactPage = () => {
       
       <div className="relative h-screen max-h-[600px] overflow-hidden">
                 <img
-          src="https://images.pexels.com/photos/6098034/pexels-photo-6098034.jpeg"
+src="https://sdmntprukwest.oaiusercontent.com/files/00000000-1530-6243-9692-72b94f6b50cc/raw?se=2025-07-24T17%3A19%3A37Z&sp=r&sv=2024-08-04&sr=b&scid=3ac00f0c-7e9b-5066-a06b-0309722964d1&skoid=8e0fb8a9-6beb-4b32-9eda-253f61890767&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T20%3A09%3A02Z&ske=2025-07-24T20%3A09%3A02Z&sks=b&skv=2024-08-04&sig=20vrxrr1H9rKOOKua6e45rDr7e8xZdqDzWfZwezsoXU%3D"
+//  src="https://images.pexels.com/photos/6098034/pexels-photo-6098034.jpeg"
           alt="Contact Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -37,9 +38,13 @@ const ContactPage = () => {
               whileTap={{ scale: 0.98 }}
               className="inline-block"
             >
-              <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all">
-                Get in Touch →
-              </button>
+            
+        
+
+<a href="/about" className="bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all inline-block">
+  About Us →
+</a>
+
             </motion.div>
           </div>
         </motion.div>
@@ -115,11 +120,14 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500">
-                Digital
-              </span> Communication Portal
-            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-snug text-center">
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500">
+    Digital
+  </span>{" "}
+  Communication Portal
+</h2>
+
+           
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our advanced contact system ensures you get the right help from the right specialist
             </p>
@@ -265,9 +273,15 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <button className="w-full bg-gradient-to-r from-blue-500 to-emerald-500 text-white py-3 px-6 rounded-xl font-bold hover:shadow-lg transition-all">
-                    Get Directions
-                  </button>
+<a
+  href="https://www.google.com/maps?q=1211+N+Broadway+%23300,+Santa+Ana,+CA+92701,+USA"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full bg-gradient-to-r from-blue-500 to-emerald-500 text-white py-3 px-6 rounded-xl font-bold hover:shadow-lg transition-all inline-block text-center"
+>
+  Get Directions
+</a>
+
                 </div>
               </div>
             </motion.div>

@@ -25,18 +25,7 @@ const ServicesPage = () => {
       >
          <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
-           <Button 
-                    variant="secondary" 
-                    size="lg"
-                    // If Button supports 'component' or 'asChild', use that instead. Otherwise, wrap Link or use <a>.
-                    // Example using react-router-dom's Link directly:
-                    // component={Link} to="/prescriber-portal"
-                    // Or, fallback to a simple anchor tag:
-                    // asChild
-                  >
-                     <a href="https://pharmacy.rxlocal.com/login/?redirect=%2Fdashboards" target="_blank">
-                      Pharmacy Portal            </a>
-                  </Button>
+         
                 </div>
               </Hero>
 
