@@ -96,7 +96,7 @@ export default function BrochurePage() {
       Patient Portal
     </a>
     */}
-    
+
   </div>
 </Hero>
 
@@ -125,7 +125,7 @@ export default function BrochurePage() {
             </h2>
             <p className="text-gray-800 mb-6 leading-relaxed">
 
-              At Apple Specialty Pharmacy, your care is a partnership — each service a vital piece of the puzzle.
+              At Apple Specialty Pharmacy, your care is a partnership , each service a vital piece of the puzzle.
             </p>
             <ul className="space-y-4">
               {experienceItems.map(({ Icon, text }, i) => (
@@ -155,7 +155,7 @@ export default function BrochurePage() {
                 {stayConnectedItems.map(({ Icon, text }, i) => (
                   <li key={i} className="flex items-start">
                     <span className="flex items-center justify-center w-10 h-10 bg-white rounded-full mr-3">
-                      <Icon className="h-4 w-4 text-primary-700" aria-hidden="true" />
+                      <Icon className="h-4 w-14 text-primary-700" aria-hidden="true" />
                     </span>
                     <span>{text}</span>
                   </li>

@@ -36,7 +36,7 @@ Apple Specialty Pharmacy (“we,” “us,” or “our”) is committed to prot
 
             <div className="mt-10 pt-8 border-t border-gray-200">
               <p className="text-sm text-gray-600">
-Last Updated:07/01/2025
+                Last Updated:07/01/2025
               </p>
             </div>
           </div>

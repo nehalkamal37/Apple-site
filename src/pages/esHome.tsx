@@ -119,7 +119,7 @@ export default function BrochurePage() {
           >
             <h2 className="text-3xl font-extrabold text-primary-800 mb-4">Tu experiencia importa</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              En Apple Specialty Pharmacy, tu cuidado es una colaboración — cada servicio es una pieza vital del rompecabezas.
+              En Apple Specialty Pharmacy, tu cuidado es una colaboración , cada servicio es una pieza vital del rompecabezas.
             </p>
             <ul className="space-y-4">
               {experienceItems.map(({ Icon, text }, i) => (
@@ -146,7 +146,7 @@ export default function BrochurePage() {
                 {stayConnectedItems.map(({ Icon, text }, i) => (
                   <li key={i} className="flex items-start">
                     <span className="flex items-center justify-center w-8 h-8 bg-white rounded-full mr-3">
-                      <Icon className="h-4 w-4 text-primary-600" />
+                      <Icon className="h-4 w-14 text-primary-600" />
                     </span>
                     <span>{text}</span>
                   </li>
@@ -220,14 +220,16 @@ export default function BrochurePage() {
           
         </motion.section>
 
+{/* Row 3 */}
 <motion.section
-  className="grid grid-cols-1 gap-8 mt-8"
+  className="grid grid-cols-1 md:grid-cols-3 gap-6"
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true }}
   variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1 } } }}
 >
-  <motion.div
+  {/* Hours */}
+ <motion.div
     variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
     className="bg-gradient-to-br from-teal-100 to-white p-6 rounded-2xl border border-teal-200 shadow-md"
   >
@@ -238,6 +240,10 @@ export default function BrochurePage() {
     </p>
   </motion.div>
 
+  {/* Spacer */}
+  <div></div>
+
+  {/* QR */}
   <motion.div
     variants={{ hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
     className="bg-gradient-to-br from-teal-50 to-white p-6 rounded-2xl border border-teal-200 shadow-md text-center"
@@ -253,8 +259,6 @@ export default function BrochurePage() {
     />
   </motion.div>
 </motion.section>
-
-
 
 
       </motion.main>

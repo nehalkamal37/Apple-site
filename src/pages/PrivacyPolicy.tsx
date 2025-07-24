@@ -43,7 +43,7 @@ const PrivacyPolicy: React.FC = () => {
 
           
         />
-             <div className="absolute  left-0 right-0 text-center">
+             <div className="absolute mt-3 left-0 right-0 text-center">
       <p className="text-gray-200 text-sm md:text-base bg-black/30 inline-block px-4 py-2 rounded-full">
         Effective Date: July 1, 2025
       </p>

@@ -132,12 +132,13 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/privacy-notice"
+                  to="/privacy-policy"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Privacy Notice
+                  Privacy Policy
                 </Link>
               </li>
+              {/*}
               <li>
                 <Link
                   to="/terms"
@@ -154,6 +155,7 @@ export const Footer = () => {
                   Non-Discrimination
                 </Link>
               </li>
+              */}
             </ul>
           </div>
 
