@@ -65,9 +65,7 @@ const insurances = [
   "Seguro Privado",
   "Planes Comerciales",
   "La mayoría de los PBMs",
-  "ADAP",
-  "Ryan White",
-  "y más"
+ 
 ];
 
 export default function BrochurePage() {
