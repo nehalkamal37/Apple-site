@@ -207,11 +207,23 @@ const PrescriberPortalPage = () => {
       {/* How to Get Started */}
       <Section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">How to Get Started</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Setting up portal access is quick and secure
-          </p>
-        </div>
+  {/* Insight button */}
+  <a
+    href="https://applerx.pbtnow.com/applerx/insight/_security.aspx"
+    target="_blank" // open in new tab (optional)
+    rel="noopener noreferrer"
+    className="inline-block bg-primary-600 text-white px-4 py-2 rounded-lg shadow hover:bg-primary-700 transition mb-6"
+  >
+    ASP Portal
+  </a>
+
+  <h2 className="text-3xl font-bold text-gray-900 mb-4">How to Get Started</h2>
+  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+    Setting up portal access is quick and secure
+  </p>
+</div>
+
+       
 
         <div className="max-w-4xl mx-auto">
           <div className="relative">
@@ -230,14 +242,33 @@ const PrescriberPortalPage = () => {
                 <div className="flex-shrink-0 h-12 w-12 bg-primary-600 text-white rounded-full flex items-center justify-center z-10 mr-8">
                   <span className="font-bold">1</span>
                 </div>
+<div className="pt-1">
+  <h3 className="text-xl font-semibold text-primary-700 mb-2">Request Access</h3>
+  <p className="text-gray-600 mb-3">
+    Send a request to our portal via{" "}
+    <a
+      href="mailto:Access@applespecialtypharmacy.com"
+      className="text-primary-600 font-medium hover:underline"
+    >
+      Access@applespecialtypharmacy.com
+    </a>{" "}
+    or contact our Provider Specialist at{" "}
+    <a href="tel:2137742775" className="text-primary-600 font-medium hover:underline">
+      (213) 774-2775
+    </a>.
+  </p>
+
+  
+</div>
+
+{/*
                 <div className="pt-1">
-                  {/*
-                  <h3 className="text-xl font-semibold text-primary-700 mb-2">Request Access</h3>
-                */}
+                 
                   <p className="text-gray-600">
                     Complete the online access request form or contact our prescriber relations team directly at (123) 456-7890.
                   </p>
                 </div>
+                */}
               </motion.div>
               
               {/* Step 2 */}

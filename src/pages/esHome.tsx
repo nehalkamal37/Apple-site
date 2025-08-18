@@ -234,7 +234,17 @@ export default function BrochurePage() {
   </motion.div>
 
   {/* Spacer */}
-  <div></div>
+{/* Logo in the middle */}
+<motion.div
+  variants={{ hidden: { scale: 0.8, opacity: 0 }, visible: { scale: 1, opacity: 1 } }}
+  className="bg-white flex items-center justify-center p-6 rounded-2xl border border-teal-200 shadow-md"
+>
+  <img
+    src="/HealthcareMerchant-NABPSeal.jpg"
+    alt="Healthcare Merchant Accreditation Seal"
+    className="w-40 h-40 object-contain"
+  />
+</motion.div>
 
   {/* QR */}
   <motion.div
